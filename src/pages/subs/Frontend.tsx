@@ -1,18 +1,15 @@
 /** @jsxImportSource @emotion/react */
 
 import React, { useEffect, useState } from 'react';
-
 import { css } from '@emotion/react'
-import './App.css'
-import MainPage from './pages/Main';
 
-
-function App() {
+function FrondendPage() {
     return (
-        <div>
-            <MainPage></MainPage>
+        <div css={css({
+        })}>
+sdfs
         </div>
-    );
-};
+    )
+}
 
-export default App;
+export { FrondendPage }
