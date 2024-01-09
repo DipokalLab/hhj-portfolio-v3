@@ -16,7 +16,6 @@ function Box({ onClick, children }: BoxType) {
         <div onClick={onClick} css={css({
             border: "0.1rem solid #F0F0F4",
             borderRadius: "1rem",
-            padding: "1rem",
             width: "100%"
         })}>
             {children}

@@ -23,6 +23,7 @@ function Modal({ children, isOpen = false, onClose }: ModalType) {
     return (
         <div css={css({
             position: "fixed",
+            zIndex: "2000",
             top: 0,
             left: 0,
             width: "100%",
