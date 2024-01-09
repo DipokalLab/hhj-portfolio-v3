@@ -6,6 +6,8 @@ import { css } from '@emotion/react'
 import { Modal } from '../components/Modal';
 import { Button, IconButton } from '../components/Button';
 import { FrondendPage } from './subs/Frontend';
+import { BackendPage } from './subs/Backend';
+import { PostPage } from './subs/Post';
 
 
 function MainPage() {
@@ -32,8 +34,16 @@ function MainPage() {
             <IconButton onClick={handleClickOpenModal} isDisplay={!isModalOpen}>person</IconButton>
 
             <Container>
+                <div css={css({
+                    display: "flex",
+                    flexDirection: "column",
+                    gap: "30vh"
+                })}>
+                    <FrondendPage></FrondendPage>
+                    <BackendPage></BackendPage>
+                    <PostPage></PostPage>
+                </div>
 
-                <FrondendPage></FrondendPage>
 
 
 
