@@ -12,6 +12,11 @@ type IconButtonType = {
     isDisplay?: boolean
 }
 
+type ButtonType = {
+    onClick?: any
+    children: any
+}
+
 function IconButton({ onClick, children, isDisplay = false }: IconButtonType) {
     return (
         <div onClick={onClick} css={css({
@@ -34,4 +39,28 @@ function IconButton({ onClick, children, isDisplay = false }: IconButtonType) {
     )
 }
 
-export { IconButton }
+function Button({ onClick, children }: ButtonType) {
+    return (
+        <div onClick={onClick} css={css({
+            border: "0.1rem solid #F0F0F4",
+            borderRadius: "0.6rem",
+            justifyContent: "center",
+            alignItems: "center",
+            padding: "0.6rem 1.4rem",
+            backgroundColor: '#ffffff',
+            fontFamily: "'Noto Sans KR', sans-serif",
+            fontWeight: "500",
+            fontSize: "0.8rem",
+            cursor: "pointer",
+            transition: "0.1s",
+            ":hover": {
+                backgroundColor: '#f2f3f5',
+            }
+        })}>
+            {children}
+        </div>
+    )
+}
+
+
+export { Button, IconButton }

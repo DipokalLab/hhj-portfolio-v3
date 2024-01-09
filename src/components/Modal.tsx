@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 
 import { css } from '@emotion/react'
-import { IconButton } from './IconButton';
+import { IconButton } from './Button';
 
 type ModalType = {
     children?: any

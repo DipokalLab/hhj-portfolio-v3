@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 
 import { css } from '@emotion/react'
 import { Modal } from '../components/Modal';
-import { IconButton } from '../components/IconButton';
+import { Button, IconButton } from '../components/Button';
 import { FrondendPage } from './subs/Frontend';
 
 
@@ -17,11 +17,18 @@ function MainPage() {
     const handleClickOpenModal = () => {
         setIsModalOpen(true)
     }
+    
+    const handleClickOldPage = () => {
+        location.href = 'https://hhj.devent.kr'
+    }
 
     return (
         <div>
             <Header></Header>
-            <Modal onClose={handleClose} isOpen={isModalOpen}>ss</Modal>
+            <Modal onClose={handleClose} isOpen={isModalOpen}>
+                <Button onClick={handleClickOldPage}>이전 포트폴리오로</Button>
+            </Modal>
+
             <IconButton onClick={handleClickOpenModal} isDisplay={!isModalOpen}>person</IconButton>
 
             <Container>
@@ -55,7 +62,7 @@ function Header() {
                 height: "100%",
                 overflow: "hidden"
             })}>
-                <h1>허형준_</h1>
+                <h1 css={css({ fontSize: "2rem" })}>허형준_</h1>
             </div>
         </div>
     )
@@ -72,7 +79,7 @@ function Container({ children }: any) {
             <div css={css({
                 display: "flex",
                 width: "100%", 
-                padding: "1rem 1rem",
+                padding: "2rem 2rem",
                 '@media(min-width: 1200px)': {
                     maxWidth: "1200px",
                 }
