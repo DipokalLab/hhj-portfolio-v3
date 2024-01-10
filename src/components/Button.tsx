@@ -46,6 +46,7 @@ function Button({ onClick, children }: ButtonType) {
             borderRadius: "0.6rem",
             justifyContent: "center",
             alignItems: "center",
+            textAlign: "center",
             padding: "0.6rem 1.4rem",
             backgroundColor: '#ffffff',
             fontFamily: "'Noto Sans KR', sans-serif",

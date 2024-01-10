@@ -8,6 +8,7 @@ import { Button, IconButton } from '../components/Button';
 import { FrondendPage } from './subs/Frontend';
 import { BackendPage } from './subs/Backend';
 import { PostPage } from './subs/Post';
+import { SecurityPage } from './subs/Security';
 
 
 function MainPage() {
@@ -42,6 +43,7 @@ function MainPage() {
                     <FrondendPage></FrondendPage>
                     <BackendPage></BackendPage>
                     <PostPage></PostPage>
+                    <SecurityPage></SecurityPage>
                 </div>
 
 
