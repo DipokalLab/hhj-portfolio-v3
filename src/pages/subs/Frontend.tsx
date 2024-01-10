@@ -15,9 +15,13 @@ function FrondendPage() {
 
             <div css={css({ 
                 display: "flex",
-                flexDirection: "row",
+                flexDirection: "column",
                 gap: "1rem",
-                paddingTop: "2rem"
+                paddingTop: "2rem",
+                '@media(min-width: 600px)': {
+                    flexDirection: "row",
+
+                }
             })}> 
 
                 <ProjectItem title='Archery' subtitle="ThreeJS 기반 양궁게임 입니다. UI 파트는 React와 TypeScript를 통해 개발했습니다." tags={["#ThreeJS", "#React"]} imageUrl="/public/images/archery-01.png">
@@ -48,7 +52,8 @@ function FrondendPage() {
                                     display: "flex",
                                     flexDirection: "row",
                                     gap: "1rem",
-                                    justifyContent: "space-between"
+                                    justifyContent: "space-between",
+  
                                 })}>
                                     <ImageBox url={"/public/images/archery-01.png"}></ImageBox>
                                     <ImageBox url={"/public/images/archery-02.png"}></ImageBox>
