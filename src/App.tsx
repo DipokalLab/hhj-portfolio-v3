@@ -4,15 +4,13 @@ import React, { useEffect, useState } from 'react';
 
 import { css } from '@emotion/react'
 import './App.css'
+import MainPage from './pages/Main';
 
 
 function App() {
     return (
-        <div css={css({
-            display: "flex",
-            backgroundColor: "#000000"
-        })}>
-            test
+        <div>
+            <MainPage></MainPage>
         </div>
     );
 };
