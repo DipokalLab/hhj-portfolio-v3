@@ -24,7 +24,7 @@ function MainPage() {
     }
     
     const handleClickOldPage = () => {
-        location.href = 'https://hhj.devent.kr'
+        location.href = 'https://v2.hhj.devent.kr'
     }
 
     return (
