@@ -5,12 +5,14 @@ import { css } from '@emotion/react'
 import { Box } from '../components/Box';
 import { Badge } from '../components/Badge';
 import { Modal } from '../components/Modal';
+import { ImageBox } from './Image';
 
 type ItemType = {
     title?: string    
     subtitle?: string
     tags?: string[]
     children?: any
+    imageUrl?: string
 
 }
 
@@ -21,7 +23,7 @@ type PostType = {
     date?: string
 }
 
-function ProjectItem({ title, subtitle, tags, children }: ItemType) {
+function ProjectItem({ title, subtitle, tags, imageUrl = '', children }: ItemType) {
     const [isModalOpen, setIsModalOpen] = useState(false)
     const handleClose = () => {
         setIsModalOpen(false)
@@ -42,6 +44,10 @@ function ProjectItem({ title, subtitle, tags, children }: ItemType) {
                 width: "100%",
                 cursor: "pointer"
             })}>
+                {imageUrl && (
+                <ImageBox url={imageUrl}></ImageBox>
+
+                )}
                 <div css={css({ 
                     position: "absolute",
                     display: "flex",

@@ -31,7 +31,7 @@ function Modal({ children, isOpen = false, onClose }: ModalType) {
             display: isOpen ? "flex" : "none",
             backgroundColor: "#ffffff",
             transition: "0.5s",
-            overflow: "hidden"
+            overflowY: "scroll"
         })}>
             <div css={css({
                 padding: "2rem 2rem",
