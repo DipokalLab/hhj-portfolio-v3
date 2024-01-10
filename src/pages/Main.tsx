@@ -9,6 +9,8 @@ import { FrondendPage } from './subs/Frontend';
 import { BackendPage } from './subs/Backend';
 import { PostPage } from './subs/Post';
 import { SecurityPage } from './subs/Security';
+import { Footer } from './Footer';
+import { Container } from '../components/Container';
 
 
 function MainPage() {
@@ -50,8 +52,10 @@ function MainPage() {
 
 
 
-                
             </Container>
+
+            <Footer></Footer>
+
         </div>
     );
 };
@@ -81,25 +85,6 @@ function Header() {
 }
 
 
-function Container({ children }: any) {
-    return (
-        <div css={css({
-            display: "flex",
-            justifyContent: "center",
-            width: "100%"
-        })}>
-            <div css={css({
-                display: "flex",
-                width: "100%", 
-                padding: "2rem 2rem",
-                '@media(min-width: 1200px)': {
-                    maxWidth: "1200px",
-                }
-            })}>
-                {children}
-            </div>
-        </div>
-    )
-}
+
 
 export default MainPage;
