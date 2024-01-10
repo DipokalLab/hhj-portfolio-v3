@@ -7,11 +7,24 @@ import { Badge } from '../../components/Badge';
 import { Modal } from '../../components/Modal';
 import { ProjectItem, ProjectPost } from '../../components/Project';
 import postsData from '../../data/posts';
+import { Button } from '../../components/Button';
 
 
 
 function PostPage() {
     const [posts, setPosts] = useState(postsData.list)
+    const [showPosts, setShowPosts] = useState([])
+    const [index, setIndex] = useState(3)
+
+    const appendMorePosts = () => {
+        const slicePosts = posts.slice(0, index)
+        setShowPosts([...slicePosts])
+        setIndex(index + 3)
+    }
+
+    useEffect(() => {
+        appendMorePosts()
+    }, [])
 
     return (
         <div css={css({
@@ -21,19 +34,16 @@ function PostPage() {
 
             <div css={css({ 
                 display: "flex",
-                flexDirection: "row",
+                flexDirection: "column",
                 gap: "1rem",
                 paddingTop: "2rem"
             })}>
-                {posts.map(item => (
+                {showPosts.map(item => (
                     <ProjectPost title={item.title} description={item.description} url={item.url} date={item.date}></ProjectPost>
-
                 ))}
 
-                
-     
+                <Button onClick={appendMorePosts}>더 불러오기</Button>
             </div>
-
         </div>
     )
 }
