@@ -58,7 +58,7 @@ function ProjectItem({ title, subtitle, tags, imageUrl = '', children }: ItemTyp
                     width: "100%",
                     height: "100%",
                     backgroundColor: "#ffffff00",
-                    zIndex: "1000",
+                    zIndex: "900",
                     borderRadius: "1rem",
                     transition: "0.1s",
                     opacity: "0%",
