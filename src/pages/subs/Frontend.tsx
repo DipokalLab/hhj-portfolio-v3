@@ -6,6 +6,10 @@ import { ProjectItem, ProjectPost } from '../../components/Project';
 import { ImageBox } from '../../components/Image';
 
 
+
+
+// NOTE: add more Nugget, Inlander
+// 
 function FrondendPage() {
     return (
         <div css={css({
