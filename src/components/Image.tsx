@@ -17,7 +17,7 @@ function ImageBox({ url }: ImageType) {
             width: "100%",
             height: "300px",
             backgroundImage: `url(${url})`,
-            borderRadius: "0.6rem",
+            borderRadius: "1rem",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
             backgroundPosition: "center"

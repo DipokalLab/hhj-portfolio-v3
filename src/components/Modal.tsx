@@ -35,6 +35,8 @@ function Modal({ children, isOpen = false, onClose }: ModalType) {
         })}>
             <div css={css({
                 padding: "2rem 2rem",
+                width: "100%",
+
             })}>
                 {children}
             </div>
