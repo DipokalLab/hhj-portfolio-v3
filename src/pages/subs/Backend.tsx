@@ -32,7 +32,7 @@ function BackendPage() {
                     })}> 
                         <div>
                             <p css={css({ fontWeight: "300", fontSize: "1.3rem", margin: 0, marginBottom: "1rem" })}> <b css={css({ fontWeight: 500})}>프로젝트 소개</b></p>
-                            <p css={css({ fontWeight: "500", fontSize: "1rem", margin: 0, color: "#797a85" })}>Scrap 글귀 공유 플랫폼에 포함된 API 입니다.</p>
+                            <p css={css({ fontWeight: "500", fontSize: "1rem", margin: 0, color: "#797a85" })}>Scrap 글귀 공유 플랫폼에 포함된 API 입니다. 테서렉트py로 진행했으며 파일 업로드 파트는 FastAPI로 빠르게 구현했습니다.</p>
                         </div>
 
                     </div>

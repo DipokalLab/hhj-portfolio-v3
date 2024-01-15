@@ -31,7 +31,14 @@ function MainPage() {
         <div>
             <Header></Header>
             <Modal onClose={handleClose} isOpen={isModalOpen}>
-                <Button onClick={handleClickOldPage}>이전 포트폴리오로</Button>
+                <div css={css({ display: "flex", flexDirection: "column" })}>
+                    <div css={css({ display: "flex" })}>
+                        <Button onClick={handleClickOldPage}>이전 포트폴리오로</Button>
+
+                    </div>
+
+
+                </div>
             </Modal>
 
             <IconButton onClick={handleClickOpenModal} isDisplay={!isModalOpen}>person</IconButton>

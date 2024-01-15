@@ -13,7 +13,7 @@ type ItemType = {
     tags?: string[]
     children?: any
     imageUrl?: string
-
+    isShow?: boolean
 }
 
 type PostType = {
@@ -23,7 +23,7 @@ type PostType = {
     date?: string
 }
 
-function ProjectItem({ title, subtitle, tags, imageUrl = '', children }: ItemType) {
+function ProjectItem({ title, subtitle, tags, imageUrl = '', children, isShow = true }: ItemType) {
     const [isModalOpen, setIsModalOpen] = useState(false)
     const handleClose = () => {
         setIsModalOpen(false)
@@ -34,6 +34,10 @@ function ProjectItem({ title, subtitle, tags, imageUrl = '', children }: ItemTyp
     }
     
     return (
+        <div css={css({
+            flex: "1 1 400px",
+            display: isShow ? "" : "none"
+        })}>
         <Box>
             <Modal onClose={handleClose} isOpen={isModalOpen}>
                 {children}
@@ -90,6 +94,8 @@ function ProjectItem({ title, subtitle, tags, imageUrl = '', children }: ItemTyp
             </div>
 
         </Box>
+        </div>
+
     )
 }
 

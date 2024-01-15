@@ -4,9 +4,19 @@ import React, { useEffect, useState } from 'react';
 import { css } from '@emotion/react'
 import { ProjectItem, ProjectPost } from '../../components/Project';
 import { ImageBox } from '../../components/Image';
+import { Button } from '../../components/Button';
 
 
+
+
+// NOTE: add more Nugget, Inlander
+// 
 function FrondendPage() {
+    const [isShowMore, setIsShowMore] = useState(false)
+
+    const handleClickMore = () => {
+        setIsShowMore(true)
+    }
     return (
         <div css={css({
         })}>
@@ -18,13 +28,15 @@ function FrondendPage() {
                 flexDirection: "column",
                 gap: "1rem",
                 paddingTop: "2rem",
+                paddingBottom: "1rem",
+                flexWrap: "wrap",
                 '@media(min-width: 600px)': {
                     flexDirection: "row",
 
                 }
             })}> 
 
-                <ProjectItem title='Archery' subtitle="ThreeJS 기반 양궁게임 입니다. UI 파트는 React와 TypeScript를 통해 개발했습니다." tags={["#ThreeJS", "#React"]} imageUrl="/public/images/archery-01.png">
+                <ProjectItem title='Archery' subtitle="ThreeJS 기반 양궁게임 입니다. UI 파트는 React와 TypeScript를 통해 개발했습니다." tags={["#ThreeJS", "#React"]} imageUrl="/public/images/archery-01.jpg">
                     <div css={css({
                         display: "flex",
                         flexDirection: "column",
@@ -55,8 +67,8 @@ function FrondendPage() {
                                     justifyContent: "space-between",
   
                                 })}>
-                                    <ImageBox url={"/public/images/archery-01.png"}></ImageBox>
-                                    <ImageBox url={"/public/images/archery-02.png"}></ImageBox>
+                                    <ImageBox url={"/public/images/archery-01.jpg"}></ImageBox>
+                                    <ImageBox url={"/public/images/archery-02.jpg"}></ImageBox>
                                 </div>
 
                                 <div css={css({
@@ -65,8 +77,8 @@ function FrondendPage() {
                                     gap: "1rem",
                                     justifyContent: "space-between"
                                 })}>
-                                    <ImageBox url={"/public/images/archery-03.png"}></ImageBox>
-                                    <ImageBox url={"/public/images/archery-04.png"}></ImageBox>
+                                    <ImageBox url={"/public/images/archery-03.jpg"}></ImageBox>
+                                    <ImageBox url={"/public/images/archery-04.jpg"}></ImageBox>
                                 </div>
                             </div>
                         </div>
@@ -83,7 +95,115 @@ function FrondendPage() {
                     </div>
                 </ProjectItem>
 
-                <ProjectItem title='VR LightSaber' subtitle="WebVR 기술을 활용해서 날아오는 광선총을 광선검으로 튕깁니다." tags={["#ThreeJS", "#WebVR"]} imageUrl="/public/images/saber-02.png">
+                <ProjectItem title='Nugget' subtitle="Custom Elements와 Electron, FFmpeg를 이용한 영상편집 소프트웨어 입니다." tags={["#CE", "#LitJS", "FFmpeg", "Electron"]} imageUrl="/public/images/nugget-01.jpg">
+                    <div css={css({
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "2rem",
+                        padding: "1rem 0"
+                    })}> 
+                        <div>
+                            <p css={css({ fontWeight: "300", fontSize: "1.3rem", margin: 0, marginBottom: "1rem" })}> <b css={css({ fontWeight: 500})}>프로젝트 소개</b></p>
+                            <p css={css({ fontWeight: "500", fontSize: "1rem", margin: 0, color: "#797a85" })}>영상편집 프로그램 입니다. 기본적인 컷편집, 애니메이션 시스템, 익스텐션을 통한 외부 API 불러오기를 제공하고 ffmpeg를 통해 랜더링이 가능하도록 구성했습니다. 클라우드플레어 R2를 이용해 ffmpeg바이너리를 다운로드받도록 설계했으며 코드사인 인증서를 통한 파일의 위 변조를 방지하기도 했습니다. </p>
+                            <p css={css({ fontWeight: "500", fontSize: "1rem", margin: 0, color: "#797a85" })}>제가 만든 소프트웨어 중에서 복잡도가 가장 높은 소프트웨어 중 하나입니다. 2번의 전체 리팩토링을 거쳤으며, litjs와 Custom Element를 적절하게 배치하여 컴포넌트간 의존도를 줄이는 작업을 수행했습니다. TypeScript를 제 개인프로젝트에 적용하기 전이라 프론트엔드 코드는 JS로 백엔드(랜더링) 코드는 TypeScript로 개발되었습니다. </p>
+                            <p css={css({ fontWeight: "500", fontSize: "1rem", margin: 0, color: "#797a85" })}>사실상 코드사인 인증서가 1년동안 유지되기 때문에, 서비스는 종료되었습니다. </p>
+
+                        </div>
+
+                        <div>
+                            <p css={css({ fontWeight: "300", fontSize: "1.3rem", margin: 0, marginBottom: "1rem", })}> <b css={css({ fontWeight: 500})}>스크린샷</b></p>
+                            <div css={css({
+                                display: "flex",
+                                flexDirection: "column",
+                                gap: "1rem"
+                            })}>
+                                <div css={css({
+                                    display: "flex",
+                                    flexDirection: "row",
+                                    gap: "1rem",
+                                    justifyContent: "space-between",
+  
+                                })}>
+                                    <ImageBox url={"/public/images/nugget-01.jpg"}></ImageBox>
+                                    <ImageBox url={"/public/images/nugget-02.jpg"}></ImageBox>
+                                </div>
+
+                                <div css={css({
+                                    display: "flex",
+                                    flexDirection: "row",
+                                    gap: "1rem",
+                                    justifyContent: "space-between"
+                                })}>
+                                    <ImageBox url={"/public/images/nugget-03.jpg"}></ImageBox>
+                                    <ImageBox url={"/public/images/nugget-04.jpg"}></ImageBox>
+                                </div>
+
+                                <div css={css({
+                                    display: "flex",
+                                    flexDirection: "row",
+                                    gap: "1rem",
+                                    justifyContent: "space-between"
+                                })}>
+                                    <ImageBox url={"/public/images/nugget-05.jpg"}></ImageBox>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </ProjectItem>    
+
+                <ProjectItem title='Inlander' subtitle="UX와 디자인을 고려해 개발한 영어 학습 앱 입니다." tags={["#TypeScript", "#Emotion", "#TypeORM"]} imageUrl="/public/images/inlander-01.jpg" isShow={isShowMore}>
+                    <div css={css({
+                        display: "flex",
+                        flexDirection: "column",
+                        gap: "2rem",
+                        padding: "1rem 0",
+                    })}> 
+                        <div>
+                            <p css={css({ fontWeight: "300", fontSize: "1.3rem", margin: 0, marginBottom: "1rem" })}> <b css={css({ fontWeight: 500})}>프로젝트 소개</b></p>
+                            <p css={css({ fontWeight: "500", fontSize: "1rem", margin: 0, color: "#797a85" })}>디자인을 중심에 둔 영어 학습 앱 입니다.</p>
+                        </div>
+
+
+                        <div css={css({
+                            width: "100%"
+                        })}>
+                            <p css={css({ fontWeight: "300", fontSize: "1.3rem", margin: 0, marginBottom: "1rem", })}> <b css={css({ fontWeight: 500})}>스크린샷</b></p>
+                            <div css={css({
+                                display: "flex",
+                                flexDirection: "column",
+                                gap: "1rem"
+                            })}>
+                                <div css={css({
+                                    display: "flex",
+                                    flexDirection: "row",
+                                    gap: "1rem",
+                                    justifyContent: "space-between",
+  
+                                })}>
+                                    <ImageBox url={"/public/images/inlander-01.jpg"}></ImageBox>
+                                    <ImageBox url={"/public/images/inlander-02.jpg"}></ImageBox>
+                                </div>
+
+                                <div css={css({
+                                    display: "flex",
+                                    flexDirection: "row",
+                                    gap: "1rem",
+                                    justifyContent: "space-between"
+                                })}>
+                                    <ImageBox url={"/public/images/inlander-03.jpg"}></ImageBox>
+                                    <ImageBox url={"/public/images/inlander-04.jpg"}></ImageBox>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </ProjectItem>       
+
+                <ProjectItem title='VR LightSaber' subtitle="WebVR 기술을 활용해서 날아오는 광선총을 광선검으로 튕깁니다." tags={["#ThreeJS", "#WebVR"]} imageUrl="/public/images/saber-02.jpg" isShow={isShowMore}>
                     <div css={css({
                         display: "flex",
                         flexDirection: "column",
@@ -99,10 +219,24 @@ function FrondendPage() {
                             <p css={css({ fontWeight: "300", fontSize: "1.3rem", margin: 0, marginBottom: "1rem" })}> <b css={css({ fontWeight: 500})}>관련 블로그</b></p>
                             <ProjectPost title="WebXR로 웹 VR 게임 만들기" description="Velog 게시글" url="https://velog.io/@dipokalhhj/WebXR-VR" date='2023-10-31'></ProjectPost>
                         </div>
+
+                        <div>
+                            <p css={css({ fontWeight: "300", fontSize: "1.3rem", margin: 0, marginBottom: "1rem" })}> <b css={css({ fontWeight: 500})}>깃허브 링크</b></p>
+                            <Button onClick={() => location.href = 'https://github.com/Public-Game-Entity/vr-lightsaber'}>https://github.com/Public-Game-Entity/vr-lightsaber</Button>
+                        </div>
+
+                        
                     </div>
 
-                </ProjectItem>        
+                </ProjectItem>    
+
+ 
             </div>
+
+            {!isShowMore && (
+                <Button onClick={handleClickMore}>더보기</Button>
+
+            )}
 
         </div>
     )
