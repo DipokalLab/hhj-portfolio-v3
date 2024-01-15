@@ -7,10 +7,12 @@ import { Container } from '../components/Container';
 
 
 function Footer() {
+    const [expend, setExpend] = useState(false)
 
     return (
         <div css={css({
-            backgroundColor: "#f2f3f5"
+            backgroundColor: "#f2f3f5",
+            marginTop: "2rem"
         })}>
             <Container>
                 <div css={css({
@@ -22,6 +24,19 @@ function Footer() {
                     <a css={css({ fontWeight: "500", fontSize: "0.8rem", color: "#797a85" })} href="https://www.facebook.com/dipokalhhj" target="_blank" rel="noopener noreferrer">페이스북</a>
                     <a css={css({ fontWeight: "500", fontSize: "0.8rem", color: "#797a85" })} href="https://github.com/DipokalLab" target="_blank" rel="noopener noreferrer">깃허브</a>
                     <a css={css({ fontWeight: "500", fontSize: "0.8rem", color: "#797a85" })} href="https://www.instagram.com/hyeongjun.dev/" target="_blank" rel="noopener noreferrer">인스타그램</a>
+
+                    {expend ? (
+                        <>
+                            <a css={css({ fontWeight: "500", fontSize: "0.8rem", color: "#797a85" })} href="https://velog.io/@dipokalhhj" target="_blank" rel="noopener noreferrer">Velog {">"}</a>
+                            <a css={css({ fontWeight: "500", fontSize: "0.8rem", color: "#797a85" })} href="https://disquiet.io/@hhj" target="_blank" rel="noopener noreferrer">디스콰이엇 {">"}</a>
+                            <a css={css({ fontWeight: "500", fontSize: "0.8rem", color: "#797a85" })} href="https://www.linkedin.com/in/huhhyeongjun/" target="_blank" rel="noopener noreferrer">링크드인 {">"}</a>
+                            <a css={css({ fontWeight: "500", fontSize: "0.8rem", color: "#797a85" })} href="https://medium.com/@hyeongjun" target="_blank" rel="noopener noreferrer">미디엄 {">"}</a>
+
+                        </>
+                    ) : (
+                        <p css={css({ fontWeight: "500", fontSize: "0.8rem", color: "#797a85", textDecoration: "underline", margin: 0, cursor: "pointer" })} onClick={() => setExpend(true)}>...</p>
+
+                    )}
 
                 </div>
             </Container>

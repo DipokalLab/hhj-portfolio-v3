@@ -219,6 +219,13 @@ function FrondendPage() {
                             <p css={css({ fontWeight: "300", fontSize: "1.3rem", margin: 0, marginBottom: "1rem" })}> <b css={css({ fontWeight: 500})}>관련 블로그</b></p>
                             <ProjectPost title="WebXR로 웹 VR 게임 만들기" description="Velog 게시글" url="https://velog.io/@dipokalhhj/WebXR-VR" date='2023-10-31'></ProjectPost>
                         </div>
+
+                        <div>
+                            <p css={css({ fontWeight: "300", fontSize: "1.3rem", margin: 0, marginBottom: "1rem" })}> <b css={css({ fontWeight: 500})}>깃허브 링크</b></p>
+                            <Button onClick={() => location.href = 'https://github.com/Public-Game-Entity/vr-lightsaber'}>https://github.com/Public-Game-Entity/vr-lightsaber</Button>
+                        </div>
+
+                        
                     </div>
 
                 </ProjectItem>    
