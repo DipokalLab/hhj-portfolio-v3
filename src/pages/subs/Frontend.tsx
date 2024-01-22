@@ -62,10 +62,9 @@ function FrondendPage() {
 
                         <div>
                             <Title>기술스택</Title>
-                            <p css={css({ fontWeight: "500", fontSize: "1rem", margin: 0, color: "#797a85" })}><b css={css({ color: "#000000" })}>ThreeJS</b> 3D 라이브러리 입니다. 웹상에서 3차원 물체를 표현하는데 있어 ThreeJS를 사용하는게 가장 효율적입니다. 다른 대안으로는 WebGL이 있으나 NativeAPI라 문법이 추상적이고 개발 기간이 오래 걸린다는 단점이 있습니다. 또 다른 대안인 React-three fiber의 경우 지원 하지 않는 문법도 존재하고 확장성 문제가 존재합니다.</p>
-                            <p css={css({ fontWeight: "500", fontSize: "1rem", margin: 0, color: "#797a85" })}><b css={css({ color: "#000000" })}>React</b> UI를 구성하기 위해 사용했습니다.</p>
-                            <p css={css({ fontWeight: "500", fontSize: "1rem", margin: 0, color: "#797a85" })}><b css={css({ color: "#000000" })}>Redux</b> ThreeJS Class와 React Components간 상태 관리를 위해 사용했습니다. </p>
-
+                            <Description><b css={css({ color: "#000000" })}>ThreeJS</b> 3D 라이브러리 입니다. 웹상에서 3차원 물체를 표현하는데 있어 ThreeJS를 사용하는게 가장 효율적입니다. 다른 대안으로는 WebGL이 있으나 NativeAPI라 문법이 추상적이고 개발 기간이 오래 걸린다는 단점이 있습니다. 또 다른 대안인 React-three fiber의 경우 지원 하지 않는 문법도 존재하고 확장성 문제가 존재합니다.</Description>
+                            <Description><b css={css({ color: "#000000" })}>React</b> UI를 구성하기 위해 사용했습니다.</Description>
+                            <Description><b css={css({ color: "#000000" })}>Redux</b> ThreeJS Class와 React Components간 상태 관리를 위해 사용했습니다. </Description>
                         </div>
 
                         
@@ -93,6 +92,16 @@ function FrondendPage() {
                             </ImageGallery>  
                         </div>
 
+                        <div>
+                            <Title>기술스택</Title>
+                            <Description><b css={css({ color: "#000000" })}>CustomElement & LitJS</b> DOM을 수정하는데 있어 React보다 좋은 성능을 보여주기 때문에 사용했습니다. 미디어 편집의 특성상 60fps로 재생되고 동작해야 하기 때문에 DOM성능이 절대적입니다. </Description>
+                            <Description><b css={css({ color: "#000000" })}>FFmpeg</b> 영상을 랜더링하기 위해 사용했습니다. Electron에서 클라우드플레어 R2로 호스팅한 FFmpeg를 받아온 다음 특정 디렉토리에 저장하고 후에 커맨트 라인을 호출하는 방식으로 사용됩니다.</Description>
+                        </div>
+
+                        <div>
+                            <Title>깃허브 링크</Title>
+                            <Button onClick={() => location.href = 'https://github.com/Team-DeVent/nugget-release'}>https://github.com/Team-DeVent/nugget-release</Button>
+                        </div>
                     </ProjectBody>
                 </ProjectItem>    
 
@@ -111,12 +120,19 @@ function FrondendPage() {
                             <Title>스크린샷</Title>
                             <ImageGallery>
                                 <ImageBox url={"/public/images/inlander-01.jpg"}></ImageBox>
-                                    <ImageBox url={"/public/images/inlander-02.jpg"}></ImageBox>
-                                    <ImageBox url={"/public/images/inlander-03.jpg"}></ImageBox>
-                                    <ImageBox url={"/public/images/inlander-04.jpg"}></ImageBox>
+                                <ImageBox url={"/public/images/inlander-02.jpg"}></ImageBox>
+                                <ImageBox url={"/public/images/inlander-03.jpg"}></ImageBox>
+                                <ImageBox url={"/public/images/inlander-04.jpg"}></ImageBox>
                             </ImageGallery>
                         </div>
 
+                        <div>
+                            <Title>기술스택</Title>
+                            <Description><b css={css({ color: "#000000" })}>React & TypeScript</b> 제가 가장 애용하는 스택입니다. 이 조합을 대체할 다른 기술을 발견하지 못했습니다.</Description>
+                            <Description><b css={css({ color: "#000000" })}>Emotion</b> Emotion, CSS in JS, Object Style을 주로 사용합니다. 확장성이 좋고 가장 CSS Native에 가까운 기술입니다.</Description>
+                            <Description><b css={css({ color: "#000000" })}>TypeORM</b> 최근에 PrismaORM으로 전환했지만, 이전까지는 TypeORM을 사용했습니다. 가장 처음 배운 ORM이고 SQL구문을 설계하지 않고 추상적인 오브젝트로만 제어할 수 있어 개발 효율성이 높아집니다.</Description>
+
+                        </div>
                     </ProjectBody>
                 </ProjectItem>       
 
@@ -141,6 +157,10 @@ function FrondendPage() {
                             </ImageGallery>  
                         </div>
 
+                        <div>
+                            <Title>기술스택</Title>
+                            <Description><b css={css({ color: "#000000" })}>ThreeJS & WebXR</b> 어렵지 않은 거의 필수적인 스택입니다. 이걸 사용하지 않고 WebGL과 Native WebXR API만을 가지고 개발하면 어렵습니다.</Description>
+                        </div>
 
                         <div>
                             <Title>깃허브 링크</Title>
