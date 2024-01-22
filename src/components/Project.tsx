@@ -24,6 +24,11 @@ type PostType = {
     date?: string
 }
 
+type BodyType = {
+    children?: any
+
+}
+
 function ProjectItem({ title, subtitle, tags, imageUrl = '', children, isShow = true, isImage = true }: ItemType) {
     const [isModalOpen, setIsModalOpen] = useState(false)
     const handleClose = () => {
@@ -127,5 +132,18 @@ function ProjectPost({ title, description, date, url }: PostType) {
 
 
 
+function ProjectBody({ children }: BodyType) {
+    return (
+        <div css={css({
+            display: "flex",
+            flexDirection: "column",
+            gap: "2rem",
+            padding: "1rem 0"
+        })}> 
+            {children}
+        </div>
+    )
+}
 
-export { ProjectItem, ProjectPost }
+
+export { ProjectItem, ProjectPost, ProjectBody }
