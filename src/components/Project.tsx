@@ -14,6 +14,7 @@ type ItemType = {
     children?: any
     imageUrl?: string
     isShow?: boolean
+    isImage?: boolean
 }
 
 type PostType = {
@@ -23,7 +24,12 @@ type PostType = {
     date?: string
 }
 
-function ProjectItem({ title, subtitle, tags, imageUrl = '', children, isShow = true }: ItemType) {
+type BodyType = {
+    children?: any
+
+}
+
+function ProjectItem({ title, subtitle, tags, imageUrl = '', children, isShow = true, isImage = true }: ItemType) {
     const [isModalOpen, setIsModalOpen] = useState(false)
     const handleClose = () => {
         setIsModalOpen(false)
@@ -35,7 +41,7 @@ function ProjectItem({ title, subtitle, tags, imageUrl = '', children, isShow = 
     
     return (
         <div css={css({
-            flex: "1 1 400px",
+            flex: isImage ? "1 1 400px" : "1",
             display: isShow ? "" : "none"
         })}>
         <Box>
@@ -126,5 +132,18 @@ function ProjectPost({ title, description, date, url }: PostType) {
 
 
 
+function ProjectBody({ children }: BodyType) {
+    return (
+        <div css={css({
+            display: "flex",
+            flexDirection: "column",
+            gap: "2rem",
+            padding: "1rem 0"
+        })}> 
+            {children}
+        </div>
+    )
+}
 
-export { ProjectItem, ProjectPost }
+
+export { ProjectItem, ProjectPost, ProjectBody }
