@@ -212,7 +212,7 @@ function FrondendPage() {
                     })}> 
                         <div>
                             <p css={css({ fontWeight: "300", fontSize: "1.3rem", margin: 0, marginBottom: "1rem" })}> <b css={css({ fontWeight: 500})}>프로젝트 소개</b></p>
-                            <p css={css({ fontWeight: "500", fontSize: "1rem", margin: 0, color: "#797a85" })}>심심할때 플레이 하기 좋은 웹 게임을 개발하기 위해 만들었습니다. ThreeJS와 React로 개발했으며 실제 DAU수치를 파악하면서 마케팅 효율을 측정해보기도 했습니다.</p>
+                            <p css={css({ fontWeight: "500", fontSize: "1rem", margin: 0, color: "#797a85" })}>ThreeJS WebXR 기술을 활용해 광선검을 휘두르는 게임입니다. 60fps를 유지하기 위해 OBB 충돌과 오브젝트 최적화를 진행했으며 오픈소스로 공개했습니다.</p>
                         </div>
 
                         <div>
@@ -224,8 +224,6 @@ function FrondendPage() {
                             <p css={css({ fontWeight: "300", fontSize: "1.3rem", margin: 0, marginBottom: "1rem" })}> <b css={css({ fontWeight: 500})}>깃허브 링크</b></p>
                             <Button onClick={() => location.href = 'https://github.com/Public-Game-Entity/vr-lightsaber'}>https://github.com/Public-Game-Entity/vr-lightsaber</Button>
                         </div>
-
-                        
                     </div>
 
                 </ProjectItem>    
