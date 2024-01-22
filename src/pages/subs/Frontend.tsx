@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import { css } from '@emotion/react'
 import { ProjectBody, ProjectItem, ProjectPost } from '../../components/Project';
-import { ImageBox } from '../../components/Image';
+import { ImageBox, ImageGallery } from '../../components/Image';
 import { Button } from '../../components/Button';
 import { Description, Title } from '../../components/Text';
 
@@ -51,32 +51,13 @@ function FrondendPage() {
 
                         <div>
                             <Title>스크린샷</Title>
-                            <div css={css({
-                                display: "flex",
-                                flexDirection: "column",
-                                gap: "1rem"
-                            })}>
-                                <div css={css({
-                                    display: "flex",
-                                    flexDirection: "row",
-                                    gap: "1rem",
-                                    justifyContent: "space-between",
-  
-                                })}>
-                                    <ImageBox url={"/public/images/archery-01.jpg"}></ImageBox>
-                                    <ImageBox url={"/public/images/archery-02.jpg"}></ImageBox>
-                                </div>
+                            <ImageGallery>
+                                <ImageBox url={"/public/images/archery-01.jpg"}></ImageBox>
+                                <ImageBox url={"/public/images/archery-02.jpg"}></ImageBox>
+                                <ImageBox url={"/public/images/archery-03.jpg"}></ImageBox>
+                                <ImageBox url={"/public/images/archery-04.jpg"}></ImageBox>
+                            </ImageGallery>
 
-                                <div css={css({
-                                    display: "flex",
-                                    flexDirection: "row",
-                                    gap: "1rem",
-                                    justifyContent: "space-between"
-                                })}>
-                                    <ImageBox url={"/public/images/archery-03.jpg"}></ImageBox>
-                                    <ImageBox url={"/public/images/archery-04.jpg"}></ImageBox>
-                                </div>
-                            </div>
                         </div>
 
                         <div>
@@ -102,54 +83,25 @@ function FrondendPage() {
                         </div>
 
                         <div>
-                            <p css={css({ fontWeight: "300", fontSize: "1.3rem", margin: 0, marginBottom: "1rem", })}> <b css={css({ fontWeight: 500})}>스크린샷</b></p>
-                            <div css={css({
-                                display: "flex",
-                                flexDirection: "column",
-                                gap: "1rem"
-                            })}>
-                                <div css={css({
-                                    display: "flex",
-                                    flexDirection: "row",
-                                    gap: "1rem",
-                                    justifyContent: "space-between",
-  
-                                })}>
-                                    <ImageBox url={"/public/images/nugget-01.jpg"}></ImageBox>
-                                    <ImageBox url={"/public/images/nugget-02.jpg"}></ImageBox>
-                                </div>
-
-                                <div css={css({
-                                    display: "flex",
-                                    flexDirection: "row",
-                                    gap: "1rem",
-                                    justifyContent: "space-between"
-                                })}>
-                                    <ImageBox url={"/public/images/nugget-03.jpg"}></ImageBox>
-                                    <ImageBox url={"/public/images/nugget-04.jpg"}></ImageBox>
-                                </div>
-
-                                <div css={css({
-                                    display: "flex",
-                                    flexDirection: "row",
-                                    gap: "1rem",
-                                    justifyContent: "space-between"
-                                })}>
-                                    <ImageBox url={"/public/images/nugget-05.jpg"}></ImageBox>
-                                </div>
-                            </div>
+                            <Title>스크린샷</Title>
+                            <ImageGallery>
+                                <ImageBox url={"/public/images/nugget-01.jpg"}></ImageBox>
+                                <ImageBox url={"/public/images/nugget-02.jpg"}></ImageBox>
+                                <ImageBox url={"/public/images/nugget-03.jpg"}></ImageBox>
+                                <ImageBox url={"/public/images/nugget-04.jpg"}></ImageBox>
+                                <ImageBox url={"/public/images/nugget-05.jpg"}></ImageBox>
+                            </ImageGallery>  
                         </div>
 
-
                     </ProjectBody>
-
                 </ProjectItem>    
+
 
                 <ProjectItem title='Inlander' subtitle="UX와 디자인을 고려해 개발한 영어 학습 앱 입니다." tags={["#TypeScript", "#Emotion", "#TypeORM"]} imageUrl="/public/images/inlander-01.jpg" isShow={isShowMore}>
                     <ProjectBody>
                         <div>
                             <Title>프로젝트 소개</Title>
-                            <p css={css({ fontWeight: "500", fontSize: "1rem", margin: 0, color: "#797a85" })}>디자인을 중심에 둔 영어 학습 앱 입니다.</p>
+                            <Description>디자인을 중심에 둔 영어 학습 앱 입니다.</Description>
                         </div>
 
 
@@ -157,36 +109,17 @@ function FrondendPage() {
                             width: "100%"
                         })}>
                             <Title>스크린샷</Title>
-                            <div css={css({
-                                display: "flex",
-                                flexDirection: "column",
-                                gap: "1rem"
-                            })}>
-                                <div css={css({
-                                    display: "flex",
-                                    flexDirection: "row",
-                                    gap: "1rem",
-                                    justifyContent: "space-between",
-  
-                                })}>
-                                    <ImageBox url={"/public/images/inlander-01.jpg"}></ImageBox>
+                            <ImageGallery>
+                                <ImageBox url={"/public/images/inlander-01.jpg"}></ImageBox>
                                     <ImageBox url={"/public/images/inlander-02.jpg"}></ImageBox>
-                                </div>
-
-                                <div css={css({
-                                    display: "flex",
-                                    flexDirection: "row",
-                                    gap: "1rem",
-                                    justifyContent: "space-between"
-                                })}>
                                     <ImageBox url={"/public/images/inlander-03.jpg"}></ImageBox>
                                     <ImageBox url={"/public/images/inlander-04.jpg"}></ImageBox>
-                                </div>
-                            </div>
+                            </ImageGallery>
                         </div>
 
                     </ProjectBody>
                 </ProjectItem>       
+
 
                 <ProjectItem title='VR LightSaber' subtitle="WebVR 기술을 활용해서 날아오는 광선총을 광선검으로 튕깁니다." tags={["#ThreeJS", "#WebVR"]} imageUrl="/public/images/saber-02.jpg" isShow={isShowMore}>
                     <ProjectBody>
@@ -199,6 +132,15 @@ function FrondendPage() {
                             <Title>관련 블로그</Title>
                             <ProjectPost title="WebXR로 웹 VR 게임 만들기" description="Velog 게시글" url="https://velog.io/@dipokalhhj/WebXR-VR" date='2023-10-31'></ProjectPost>
                         </div>
+
+                        <div>
+                            <Title>스크린샷</Title>
+                            <ImageGallery>
+                                <ImageBox url={"/public/images/saber-01.jpg"}></ImageBox>
+                                <ImageBox url={"/public/images/saber-02.jpg"}></ImageBox>
+                            </ImageGallery>  
+                        </div>
+
 
                         <div>
                             <Title>깃허브 링크</Title>
