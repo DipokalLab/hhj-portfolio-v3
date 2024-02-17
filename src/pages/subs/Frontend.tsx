@@ -69,10 +69,22 @@ function FrondendPage() {
             <div>
               <Title>스크린샷</Title>
               <ImageGallery>
-                <ImageBox url={"/public/images/archery-01.jpg"}></ImageBox>
-                <ImageBox url={"/public/images/archery-02.jpg"}></ImageBox>
-                <ImageBox url={"/public/images/archery-03.jpg"}></ImageBox>
-                <ImageBox url={"/public/images/archery-04.jpg"}></ImageBox>
+                <ImageBox
+                  isAvailableZoom={true}
+                  url={"/public/images/archery-01.jpg"}
+                ></ImageBox>
+                <ImageBox
+                  isAvailableZoom={true}
+                  url={"/public/images/archery-02.jpg"}
+                ></ImageBox>
+                <ImageBox
+                  isAvailableZoom={true}
+                  url={"/public/images/archery-03.jpg"}
+                ></ImageBox>
+                <ImageBox
+                  isAvailableZoom={true}
+                  url={"/public/images/archery-04.jpg"}
+                ></ImageBox>
               </ImageGallery>
             </div>
 
@@ -152,11 +164,26 @@ function FrondendPage() {
             <div>
               <Title>스크린샷</Title>
               <ImageGallery>
-                <ImageBox url={"/public/images/nugget-01.jpg"}></ImageBox>
-                <ImageBox url={"/public/images/nugget-02.jpg"}></ImageBox>
-                <ImageBox url={"/public/images/nugget-03.jpg"}></ImageBox>
-                <ImageBox url={"/public/images/nugget-04.jpg"}></ImageBox>
-                <ImageBox url={"/public/images/nugget-05.jpg"}></ImageBox>
+                <ImageBox
+                  isAvailableZoom={true}
+                  url={"/public/images/nugget-01.jpg"}
+                ></ImageBox>
+                <ImageBox
+                  isAvailableZoom={true}
+                  url={"/public/images/nugget-02.jpg"}
+                ></ImageBox>
+                <ImageBox
+                  isAvailableZoom={true}
+                  url={"/public/images/nugget-03.jpg"}
+                ></ImageBox>
+                <ImageBox
+                  isAvailableZoom={true}
+                  url={"/public/images/nugget-04.jpg"}
+                ></ImageBox>
+                <ImageBox
+                  isAvailableZoom={true}
+                  url={"/public/images/nugget-05.jpg"}
+                ></ImageBox>
               </ImageGallery>
             </div>
 
@@ -219,10 +246,22 @@ function FrondendPage() {
             >
               <Title>스크린샷</Title>
               <ImageGallery>
-                <ImageBox url={"/public/images/inlander-01.jpg"}></ImageBox>
-                <ImageBox url={"/public/images/inlander-02.jpg"}></ImageBox>
-                <ImageBox url={"/public/images/inlander-03.jpg"}></ImageBox>
-                <ImageBox url={"/public/images/inlander-04.jpg"}></ImageBox>
+                <ImageBox
+                  isAvailableZoom={true}
+                  url={"/public/images/inlander-01.jpg"}
+                ></ImageBox>
+                <ImageBox
+                  isAvailableZoom={true}
+                  url={"/public/images/inlander-02.jpg"}
+                ></ImageBox>
+                <ImageBox
+                  isAvailableZoom={true}
+                  url={"/public/images/inlander-03.jpg"}
+                ></ImageBox>
+                <ImageBox
+                  isAvailableZoom={true}
+                  url={"/public/images/inlander-04.jpg"}
+                ></ImageBox>
               </ImageGallery>
             </div>
 
@@ -285,8 +324,14 @@ function FrondendPage() {
             <div>
               <Title>스크린샷</Title>
               <ImageGallery>
-                <ImageBox url={"/public/images/saber-01.jpg"}></ImageBox>
-                <ImageBox url={"/public/images/saber-02.jpg"}></ImageBox>
+                <ImageBox
+                  isAvailableZoom={true}
+                  url={"/public/images/saber-01.jpg"}
+                ></ImageBox>
+                <ImageBox
+                  isAvailableZoom={true}
+                  url={"/public/images/saber-02.jpg"}
+                ></ImageBox>
               </ImageGallery>
             </div>
 
@@ -351,10 +396,22 @@ function FrondendPage() {
             <div>
               <Title>스크린샷</Title>
               <ImageGallery>
-                <ImageBox url={"/public/images/intelli-01.jpg"}></ImageBox>
-                <ImageBox url={"/public/images/intelli-02.jpg"}></ImageBox>
-                <ImageBox url={"/public/images/intelli-03.jpg"}></ImageBox>
-                <ImageBox url={"/public/images/intelli-04.jpg"}></ImageBox>
+                <ImageBox
+                  isAvailableZoom={true}
+                  url={"/public/images/intelli-01.jpg"}
+                ></ImageBox>
+                <ImageBox
+                  isAvailableZoom={true}
+                  url={"/public/images/intelli-02.jpg"}
+                ></ImageBox>
+                <ImageBox
+                  isAvailableZoom={true}
+                  url={"/public/images/intelli-03.jpg"}
+                ></ImageBox>
+                <ImageBox
+                  isAvailableZoom={true}
+                  url={"/public/images/intelli-04.jpg"}
+                ></ImageBox>
               </ImageGallery>
             </div>
 
