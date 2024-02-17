@@ -77,6 +77,13 @@ function FrondendPage() {
             </div>
 
             <div>
+              <Title>기타 정보</Title>
+              <Description>
+                <b css={css({ color: "#000000" })}>개발 일자 : 2023년 9월</b>
+              </Description>
+            </div>
+
+            <div>
               <Title>기술스택</Title>
               <Description>
                 <b css={css({ color: "#000000" })}>ThreeJS</b> 3D 라이브러리
@@ -94,6 +101,20 @@ function FrondendPage() {
                 <b css={css({ color: "#000000" })}>Redux</b> ThreeJS Class와
                 React Components간 상태 관리를 위해 사용했습니다.{" "}
               </Description>
+              <Description>
+                <b css={css({ color: "#000000" })}>i18n</b> 프로덕트 헌트 출시를
+                위해 영어 번역을 추가했습니다. 랜딩페이지에서 영어 한국어를
+                선택할 수 있는 옵션 버튼으로 언어를 전환할 수 있습니다.
+              </Description>
+            </div>
+
+            <div>
+              <Title>동작 링크</Title>
+              <Button
+                onClick={() => (location.href = "https://archery.devent.kr/")}
+              >
+                archery.devent.kr
+              </Button>
             </div>
           </ProjectBody>
         </ProjectItem>
@@ -156,6 +177,15 @@ function FrondendPage() {
             </div>
 
             <div>
+              <Title>기타 정보</Title>
+              <Description>
+                <b css={css({ color: "#000000" })}>
+                  개발 일자 : 2022년 12월 ~ 2023년 6월
+                </b>
+              </Description>
+            </div>
+
+            <div>
               <Title>깃허브 링크</Title>
               <Button
                 onClick={() =>
@@ -194,6 +224,13 @@ function FrondendPage() {
                 <ImageBox url={"/public/images/inlander-03.jpg"}></ImageBox>
                 <ImageBox url={"/public/images/inlander-04.jpg"}></ImageBox>
               </ImageGallery>
+            </div>
+
+            <div>
+              <Title>기타 정보</Title>
+              <Description>
+                <b css={css({ color: "#000000" })}>개발 일자 : 2023년 12월</b>
+              </Description>
             </div>
 
             <div>
@@ -263,6 +300,13 @@ function FrondendPage() {
             </div>
 
             <div>
+              <Title>기타 정보</Title>
+              <Description>
+                <b css={css({ color: "#000000" })}>개발 일자 : 2023년 11월</b>
+              </Description>
+            </div>
+
+            <div>
               <Title>깃허브 링크</Title>
               <Button
                 onClick={() =>
@@ -271,6 +315,83 @@ function FrondendPage() {
                 }
               >
                 https://github.com/Public-Game-Entity/vr-lightsaber
+              </Button>
+            </div>
+
+            <div>
+              <Title>동작 링크</Title>
+              <Button
+                onClick={() => (location.href = "https://saber.devent.kr/")}
+              >
+                https://saber.devent.kr/
+              </Button>
+            </div>
+          </ProjectBody>
+        </ProjectItem>
+
+        <ProjectItem
+          title="세기의 지성인"
+          subtitle="d3.js와 React를 통해 역사속 지성인을 탐구해봅니다."
+          tags={["#d3.js", "#React"]}
+          imageUrl="/public/images/intelli-01.jpg"
+          isShow={isShowMore}
+        >
+          <ProjectBody>
+            <div>
+              <Title>프로젝트 소개</Title>
+              <Description>
+                하루만에 배운 d3js 라이브러리를 바탕으로 개발한 "세기의 지성인"
+                사이트 입니다. 역사속 지성인들을 탐구해보고 각각의 사람들이 다른
+                사람들에게 어떠한 영향을 미쳤는지 과학사/음악사/미술사/철학사등
+                여러 역사적 사료에 기반하여 개발되었습니다. 사실상 개발은 3일
+                안에 끝났지만, 자료수집이 오래걸리는 프로젝트 입니다.
+              </Description>
+            </div>
+
+            <div>
+              <Title>스크린샷</Title>
+              <ImageGallery>
+                <ImageBox url={"/public/images/intelli-01.jpg"}></ImageBox>
+                <ImageBox url={"/public/images/intelli-02.jpg"}></ImageBox>
+                <ImageBox url={"/public/images/intelli-03.jpg"}></ImageBox>
+                <ImageBox url={"/public/images/intelli-04.jpg"}></ImageBox>
+              </ImageGallery>
+            </div>
+
+            <div>
+              <Title>기타 정보</Title>
+              <Description>
+                <b css={css({ color: "#000000" })}>
+                  개발 일자 : 2024년 1월 3일간
+                </b>
+              </Description>
+            </div>
+
+            <div>
+              <Title>기술스택</Title>
+              <Description>
+                <b css={css({ color: "#000000" })}>d3.js</b> Canvas API로 구현할
+                수도 있으나 단기간내에 개발하고자 했기 때문에 상용 라이브러리를
+                사용했습니다. 저수준 API로 확장이 용이하고 레퍼런스도 다양하게
+                존재하기 때문에 개발하는데 큰 어려움은 없었습니다. 공식문서에
+                적혀있는 메소드를 보고 개발을 진행했습니다.
+              </Description>
+              <Description>
+                <b css={css({ color: "#000000" })}>React CRA</b> CRA로 배포한 첫
+                번쨰 앱 입니다. 그동안 자체적으로 보일러프로젝트를 구성해
+                배포했으나 사실 별 차이가 없다는 걸 깨닫고는 바로 CRA로
+                넘어갔습니다.
+              </Description>
+            </div>
+
+            <div>
+              <Title>동작 링크</Title>
+              <Button
+                onClick={() =>
+                  (location.href = "https://intelligence-list.devent.kr/")
+                }
+              >
+                https://intelligence-list.devent.kr/
               </Button>
             </div>
           </ProjectBody>
