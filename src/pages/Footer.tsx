@@ -46,93 +46,20 @@ function Footer() {
             </a>
             에 있습니다.
           </p>
-          <a
-            css={css({
-              fontWeight: "500",
-              fontSize: "0.8rem",
-              color: "#797a85",
-            })}
-            href="https://www.facebook.com/dipokalhhj"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            페이스북
-          </a>
-          <a
-            css={css({
-              fontWeight: "500",
-              fontSize: "0.8rem",
-              color: "#797a85",
-            })}
-            href="https://github.com/DipokalLab"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            깃허브
-          </a>
-          <a
-            css={css({
-              fontWeight: "500",
-              fontSize: "0.8rem",
-              color: "#797a85",
-            })}
-            href="https://www.instagram.com/hyeongjun.dev/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link url={"https://www.facebook.com/dipokalhhj"}>페이스북</Link>
+          <Link url={"https://github.com/DipokalLab"}>깃허브</Link>
+          <Link url={"https://www.instagram.com/hyeongjun.dev/"}>
             인스타그램
-          </a>
+          </Link>
 
           {expend ? (
             <>
-              <a
-                css={css({
-                  fontWeight: "500",
-                  fontSize: "0.8rem",
-                  color: "#797a85",
-                })}
-                href="https://velog.io/@dipokalhhj"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Velog {">"}
-              </a>
-              <a
-                css={css({
-                  fontWeight: "500",
-                  fontSize: "0.8rem",
-                  color: "#797a85",
-                })}
-                href="https://disquiet.io/@hhj"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                디스콰이엇 {">"}
-              </a>
-              <a
-                css={css({
-                  fontWeight: "500",
-                  fontSize: "0.8rem",
-                  color: "#797a85",
-                })}
-                href="https://www.linkedin.com/in/huhhyeongjun/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <Link url={"https://velog.io/@dipokalhhj"}>Velog {">"}</Link>
+              <Link url={"https://disquiet.io/@hhj"}>디스콰이엇 {">"}</Link>
+              <Link url={"https://www.linkedin.com/in/huhhyeongjun/"}>
                 링크드인 {">"}
-              </a>
-              <a
-                css={css({
-                  fontWeight: "500",
-                  fontSize: "0.8rem",
-                  color: "#797a85",
-                })}
-                href="https://medium.com/@hyeongjun"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                미디엄 {">"}
-              </a>
+              </Link>
+              <Link url={"https://medium.com/@hyeongjun"}>미디엄 {">"}</Link>
             </>
           ) : (
             <p
@@ -152,6 +79,23 @@ function Footer() {
         </div>
       </Container>
     </div>
+  );
+}
+
+function Link({ url, children }: { url: string; children: any }) {
+  return (
+    <a
+      css={css({
+        fontWeight: "500",
+        fontSize: "0.8rem",
+        color: "#797a85",
+      })}
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {children}
+    </a>
   );
 }
 
