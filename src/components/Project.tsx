@@ -142,20 +142,36 @@ function ProjectPost({ title, description, date, url }: PostType) {
           cursor: "pointer",
         })}
       >
-        <p css={css({ fontSize: "1.3rem", fontWeight: "500", margin: 0 })}>
-          {title}
-        </p>
-        <p
+        <div
           css={css({
-            fontSize: "1rem",
-            fontWeight: "500",
-            color: "#797a85",
-            margin: 0,
-            marginBottom: "0.6rem",
+            display: "flex",
+            flexDirection: "column",
+            gap: "0.6rem",
+            transition: "text-decoration-color 0.5s",
+            textDecorationColor: "#ffffff",
+
+            ":hover": {
+              textDecoration: "underline 0.2rem",
+              textDecorationColor: "#dcdce3",
+            },
           })}
         >
-          {description}
-        </p>
+          <p css={css({ fontSize: "1.3rem", fontWeight: "500", margin: 0 })}>
+            {title}
+          </p>
+          <p
+            css={css({
+              fontSize: "1rem",
+              fontWeight: "500",
+              color: "#797a85",
+              margin: 0,
+              marginBottom: "0.6rem",
+            })}
+          >
+            {description}
+          </p>
+        </div>
+
         <p
           css={css({
             fontSize: "0.8rem",

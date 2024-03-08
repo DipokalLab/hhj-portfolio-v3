@@ -453,6 +453,115 @@ function FrondendPage() {
             </div>
           </ProjectBody>
         </ProjectItem>
+
+        <ProjectItem
+          title="Maskers"
+          subtitle="모두가 버튜버가 된다. 웹에서 동작하는 버튜버 플랫폼."
+          tags={["#mediapipe", "#On Device AI", "#threejs"]}
+          imageUrl="/public/images/maskers-10.jpg"
+          isShow={isShowMore}
+        >
+          <ProjectBody>
+            <div>
+              <Title>프로젝트 소개</Title>
+              <Description>
+                모두가 버튜버가 된다. 웹 브라우저에서 빠르고 안정적으로 동작하는
+                버튜버 플랫폼 입니다. 기존 버튜버 앱이 가진 고질적인 접근성
+                문제와 보편성 문제를 해결했으며 누구나 웹브라우저만 있으면
+                스마트폰이든 PC든 버튜버를 체험해볼 수 있습니다. WebRTC,
+                ThreeJS, 최적화, On Device AI등 현재 최신 기술을 사용해서 웹
+                환경에서도 끊김없이 페이셜 트래킹을 수행할 수 있습니다.
+                <br />총 2가지 버전이 있으며 flat 3d Face Mode와 버튜버 스타일
+                2D 모드가 존재합니다. 사용자의 기호에 따라 선택할 수 있으며
+                버튜버에 거부감이 드는 분들은 기존 Face Mode를 사용하면 되도록
+                설계했습니다.
+              </Description>
+            </div>
+
+            <div>
+              <Title>스크린샷</Title>
+              <ImageGallery>
+                <ImageBox
+                  isAvailableZoom={true}
+                  url={"/public/images/maskers-01.jpg"}
+                ></ImageBox>
+                <ImageBox
+                  isAvailableZoom={true}
+                  url={"/public/images/maskers-02.jpg"}
+                ></ImageBox>
+                <ImageBox
+                  isAvailableZoom={true}
+                  url={"/public/images/maskers-03.jpg"}
+                ></ImageBox>
+                <ImageBox
+                  isAvailableZoom={true}
+                  url={"/public/images/maskers-04.jpg"}
+                ></ImageBox>
+                <ImageBox
+                  isAvailableZoom={true}
+                  url={"/public/images/maskers-05.jpg"}
+                ></ImageBox>{" "}
+                <ImageBox
+                  isAvailableZoom={true}
+                  url={"/public/images/maskers-06.jpg"}
+                ></ImageBox>{" "}
+                <ImageBox
+                  isAvailableZoom={true}
+                  url={"/public/images/maskers-07.jpg"}
+                ></ImageBox>{" "}
+                <ImageBox
+                  isAvailableZoom={true}
+                  url={"/public/images/maskers-08.jpg"}
+                ></ImageBox>{" "}
+                <ImageBox
+                  isAvailableZoom={true}
+                  url={"/public/images/maskers-09.jpg"}
+                ></ImageBox>{" "}
+                <ImageBox
+                  isAvailableZoom={true}
+                  url={"/public/images/maskers-10.jpg"}
+                ></ImageBox>{" "}
+                <ImageBox
+                  isAvailableZoom={true}
+                  url={"/public/images/maskers-11.jpg"}
+                ></ImageBox>
+              </ImageGallery>
+            </div>
+
+            <div>
+              <Title>기타 정보</Title>
+              <Description>
+                <b css={css({ color: "#000000" })}>개발 일자 : 2024년 1월 ~</b>
+              </Description>
+            </div>
+
+            <div>
+              <Title>주요 기술스택</Title>
+              <Description>
+                <b css={css({ color: "#000000" })}>ThreeJS</b>
+              </Description>
+              <Description>
+                <b css={css({ color: "#000000" })}>React</b>
+              </Description>
+              <Description>
+                <b css={css({ color: "#000000" })}>WebRTC</b>
+              </Description>
+              <Description>
+                <b css={css({ color: "#000000" })}>Mediapipe</b>
+              </Description>
+              <Description>
+                <b css={css({ color: "#000000" })}>Socket.io</b>
+              </Description>
+            </div>
+
+            <div>
+              <Title>동작 링크</Title>
+              <Button onClick={() => (location.href = "https://maskers.app")}>
+                https://maskers.app
+              </Button>
+            </div>
+          </ProjectBody>
+        </ProjectItem>
       </div>
 
       {!isShowMore && <Button onClick={handleClickMore}>더보기</Button>}
