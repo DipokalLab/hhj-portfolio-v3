@@ -38,4 +38,8 @@ function Description({ children }: TextType) {
   );
 }
 
-export { Title, Description };
+function Bold({ children }: { children: any }) {
+  return <b css={css({ fontWeight: 500 })}>{children}</b>;
+}
+
+export { Title, Description, Bold };

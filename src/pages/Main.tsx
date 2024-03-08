@@ -9,6 +9,7 @@ import { PostPage } from "./subs/Post";
 import { SecurityPage } from "./subs/Security";
 import { Footer } from "./Footer";
 import { Container } from "../components/Container";
+import { LinksPage } from "./subs/Links";
 
 function MainPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -51,6 +52,7 @@ function MainPage() {
           <BackendPage></BackendPage>
           <PostPage></PostPage>
           <SecurityPage></SecurityPage>
+          <LinksPage></LinksPage>
         </div>
       </Container>
 
