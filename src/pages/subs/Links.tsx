@@ -19,7 +19,6 @@ function LinksPage() {
           display: "flex",
           justifyContent: "space-between",
           flexDirection: "row",
-          gap: "2rem",
           paddingTop: "2rem",
         })}
       >
