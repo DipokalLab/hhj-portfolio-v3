@@ -5,6 +5,7 @@ import { Badge } from "../../components/common/Badge";
 import { Modal } from "../../components/common/Modal";
 import { ProjectItem, ProjectPost } from "../../components/Project";
 import { Button } from "../../components/common/Button";
+import { t } from "i18next";
 
 function SecurityPage() {
   const handleClickOtherSite = () => {
@@ -15,11 +16,13 @@ function SecurityPage() {
     <div css={css({})}>
       <p css={css({ fontWeight: "300", fontSize: "1.6rem", margin: 0 })}>
         {" "}
-        <b css={css({ fontWeight: 500 })}>정보보안</b>도 다룹니다.
+        <b css={css({ fontWeight: 500 })}>
+          {t(`ns:informationSecurity.title`)}
+        </b>
+        {t(`ns:informationSecurity.titleNext`)}
       </p>
       <p css={css({ fontWeight: "500", fontSize: "1rem", color: "#797a85" })}>
-        두 번의 정보보호영재교육원(중등심화, 고등전문) 과정을 수료했습니다.
-        관심을 갖고 있는 분야중 하나입니다.
+        {t(`ns:informationSecurity.description`)}
       </p>
 
       <div

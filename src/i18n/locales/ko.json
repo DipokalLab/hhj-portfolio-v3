@@ -1,0 +1,56 @@
+{
+  "main": {
+    "title": "허형준_",
+
+    "FooterDesc": "소프트웨어 개발자 허형준의 개인 포트폴리오 입니다. 취업을 위한 용도가 아닌 기록을 남기기 위함이 목적이며, 구체적인 인적 사항이 명시되지 않습니다. 해당 사이트의 코드는 다음 링크에 있습니다.",
+    "changeLanguage": "English",
+    "PrevPortfolio": "이전 포트폴리오"
+  },
+  "common": {
+    "more": "더보기",
+    "go": "바로가기"
+  },
+  "platform": {
+    "dreamhack": "드림핵",
+    "linkedin": "링크드인",
+    "github": "깃허브",
+    "instagram": "인스타그램",
+    "blog": "블로그",
+    "facebook": "페이스북",
+    "makerblog": "디스콰이엇",
+    "medium": "미디엄"
+  },
+  "frontendProject": {
+    "title": "프론트엔드 개발자",
+    "titleNext": " 입니다.",
+    "description": "눈에 보이는 소프트웨어를 만듭니다. ThreeJS를 활용한 3D 미니게임, WebRTC 실시간 통신, JS 기반 ML등 프론트엔드에서 쓰이는 새로운 기술을 탐구합니다. 무엇보다 저의 주력 기술 분야 입니다.",
+    "archery": {
+      "title": "Archery",
+      "description": "ThreeJS 기반 양궁게임 입니다. UI 파트는 React와 TypeScript를 통해 개발했습니다."
+    },
+    "nugget": {
+      "title": "Nugget",
+      "description": "Custom Elements와 Electron, FFmpeg를 이용한 영상편집 소프트웨어 입니다."
+    }
+  },
+  "backendProject": {
+    "title": "백엔드 개발자",
+    "titleNext": " 입니다.",
+    "description": "NodeJS Express를 주력으로 사용합니다. 확장 가능하고 견고한 서버를 설계하는데 중심을 두고 있습니다."
+  },
+  "writer": {
+    "title": "글",
+    "titleNext": "을 통해 인사이트를 공유하고 있습니다.",
+    "description": "기술 칼럼부터, 개인적인 에세이까지 여러 블로그 플랫폼에서 글을 쓰고있습니다. 제가 배웠던 지식을 다른 사람들과 공유하는 것에 희열을 느낍니다."
+  },
+  "informationSecurity": {
+    "title": "정보보안",
+    "titleNext": "도 다룹니다.",
+    "description": "관심있는 분야입니다. 가끔 심심할때 CTF문제를 풀어봅니다."
+  },
+  "moreLink": {
+    "title": "여러 플랫폼",
+    "titleNext": "에 서식하고 있습니다.",
+    "description": "링크드인, 인스타그램, 블로그에서 정기적으로 발행되는 포스트와 소식을 받아보실 수 있습니다."
+  }
+}

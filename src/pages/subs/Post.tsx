@@ -6,6 +6,7 @@ import { Modal } from "../../components/common/Modal";
 import { ProjectItem, ProjectPost } from "../../components/Project";
 import { Button } from "../../components/common/Button";
 import postsData from "../../data/posts";
+import { t } from "i18next";
 
 function PostPage() {
   const [posts, setPosts] = useState(postsData.list);
@@ -26,13 +27,11 @@ function PostPage() {
     <div css={css({})}>
       <p css={css({ fontWeight: "300", fontSize: "1.6rem", margin: 0 })}>
         {" "}
-        <b css={css({ fontWeight: 500 })}>글</b>을 통해 인사이트를 공유하고
-        있습니다.
+        <b css={css({ fontWeight: 500 })}>{t(`ns:writer.title`)}</b>
+        {t(`ns:writer.titleNext`)}
       </p>
       <p css={css({ fontWeight: "500", fontSize: "1rem", color: "#797a85" })}>
-        기술 칼럼부터, 개인적인 에세이까지 여러 블로그 플랫폼에서 글을 쓰고
-        있습니다. 제가 배웠던 지식을 다른 사람들과 공유하는 것에 희열을
-        느낍니다.{" "}
+        {t(`ns:writer.description`)}
       </p>
 
       <div
@@ -52,7 +51,7 @@ function PostPage() {
           ></ProjectPost>
         ))}
 
-        <Button onClick={appendMorePosts}>더 불러오기</Button>
+        <Button onClick={appendMorePosts}>{t(`ns:common.more`)}</Button>
       </div>
     </div>
   );
