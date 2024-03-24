@@ -1,0 +1,56 @@
+{
+  "main": {
+    "title": "Hyeongjun Huh_",
+
+    "FooterDesc": "This is the personal portfolio of software developer Hyeongjun Huh. The code on the site is at the following link.",
+    "changeLanguage": "한국어",
+    "PrevPortfolio": "Visit Old Portfolio"
+  },
+  "common": {
+    "more": "More",
+    "go": "Visit"
+  },
+  "platform": {
+    "dreamhack": "Wargame(dreamhack)",
+    "linkedin": "Linkedin",
+    "github": "GitHub",
+    "instagram": "Instagram",
+    "blog": "Blog",
+    "facebook": "Facebook",
+    "makerblog": "Maker Blog(disquiet)",
+    "medium": "Medium"
+  },
+  "frontendProject": {
+    "title": "Frontend Developer",
+    "titleNext": "",
+    "description": "I'm making visible software. Exploring cutting edge web technologies used on the front end such as 3D mini-games using ThreeJS, WebRTC real-time communication, and JS-based ML. Above all, it's my main area of technology.",
+    "archery": {
+      "title": "Archery",
+      "description": "This is a three JS based archery game. The UI part was developed by React and TypeScript."
+    },
+    "nugget": {
+      "title": "Nugget",
+      "description": "It is a video editing software using Custom Elements, Electron, and FFmpeg."
+    }
+  },
+  "backendProject": {
+    "title": "Backend Developer",
+    "titleNext": "",
+    "description": "I use NodeJS Express. I'm focused on designing scalable and robust servers when I'm developing them."
+  },
+  "writer": {
+    "title": "Writer",
+    "titleNext": "",
+    "description": "I'm writing in Korean on several blog platforms. I usually share technical columns, personal essays, etc. And I'm excited to share the knowledge I've learned with others. *I recommend you turn on the Google translator and watch it."
+  },
+  "informationSecurity": {
+    "title": "Information security",
+    "titleNext": "",
+    "description": "It's my area of interest. I mainly solve wargames related to web hacking and encryption."
+  },
+  "moreLink": {
+    "title": "Visit My Website",
+    "titleNext": "",
+    "description": "You can find me on the internet!"
+  }
+}

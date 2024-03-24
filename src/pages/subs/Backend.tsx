@@ -10,17 +10,18 @@ import {
 } from "../../components/Project";
 import { Button } from "../../components/common/Button";
 import { Description, Title } from "../../components/common/Text";
+import { t } from "i18next";
 
 function BackendPage() {
   return (
     <div css={css({})}>
       <p css={css({ fontWeight: "300", fontSize: "1.6rem", margin: 0 })}>
         {" "}
-        <b css={css({ fontWeight: 500 })}>백엔드 개발자</b> 입니다.
+        <b css={css({ fontWeight: 500 })}>{t(`ns:backendProject.title`)}</b>
+        {t(`ns:backendProject.titleNext`)}
       </p>
       <p css={css({ fontWeight: "500", fontSize: "1rem", color: "#797a85" })}>
-        NodeJS Express를 주력으로 사용합니다. 확장 가능하고 견고한 서버를
-        설계하는데 중심을 두고 있습니다.
+        {t(`ns:backendProject.description`)}
       </p>
 
       <div

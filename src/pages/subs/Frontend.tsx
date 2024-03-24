@@ -8,6 +8,7 @@ import {
 import { ImageBox, ImageGallery } from "../../components/Image";
 import { Button } from "../../components/common/Button";
 import { Description, Title } from "../../components/common/Text";
+import { t } from "i18next";
 
 function FrondendPage() {
   const [isShowMore, setIsShowMore] = useState(false);
@@ -19,12 +20,11 @@ function FrondendPage() {
     <div css={css({})}>
       <p css={css({ fontWeight: "300", fontSize: "1.6rem", margin: 0 })}>
         {" "}
-        <b css={css({ fontWeight: 500 })}>프론트엔드 개발자</b> 입니다.
+        <b css={css({ fontWeight: 500 })}>{t(`ns:frontendProject.title`)}</b>
+        {t(`ns:frontendProject.titleNext`)}
       </p>
       <p css={css({ fontWeight: "500", fontSize: "1rem", color: "#797a85" })}>
-        눈에 보이는 소프트웨어를 만듭니다. ThreeJS를 활용한 3D 미니게임, WebRTC
-        실시간 통신, JS 기반 ML등 프론트엔드에서 쓰이는 새로운 기술을
-        탐구합니다. 무엇보다 저의 주력 기술 분야 입니다.
+        {t(`ns:frontendProject.description`)}
       </p>
 
       <div
@@ -41,8 +41,8 @@ function FrondendPage() {
         })}
       >
         <ProjectItem
-          title="Archery"
-          subtitle="ThreeJS 기반 양궁게임 입니다. UI 파트는 React와 TypeScript를 통해 개발했습니다."
+          title={t(`ns:frontendProject.archery.title`)}
+          subtitle={t(`ns:frontendProject.archery.description`)}
           tags={["#ThreeJS", "#React"]}
           imageUrl="/public/images/archery-01.jpg"
         >
@@ -132,8 +132,8 @@ function FrondendPage() {
         </ProjectItem>
 
         <ProjectItem
-          title="Nugget"
-          subtitle="Custom Elements와 Electron, FFmpeg를 이용한 영상편집 소프트웨어 입니다."
+          title={t(`ns:frontendProject.nugget.title`)}
+          subtitle={t(`ns:frontendProject.nugget.description`)}
           tags={["#CE", "#LitJS", "FFmpeg", "Electron"]}
           imageUrl="/public/images/nugget-01.jpg"
         >
@@ -564,7 +564,9 @@ function FrondendPage() {
         </ProjectItem>
       </div>
 
-      {!isShowMore && <Button onClick={handleClickMore}>더보기</Button>}
+      {!isShowMore && (
+        <Button onClick={handleClickMore}>{t(`ns:common.more`)}</Button>
+      )}
     </div>
   );
 }

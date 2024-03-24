@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { css } from "@emotion/react";
 import { Container } from "../components/Container";
+import { useTranslation } from "react-i18next";
 
 function Footer() {
+  const { t } = useTranslation();
+
   const [expend, setExpend] = useState(false);
 
   return (
@@ -29,9 +32,7 @@ function Footer() {
               color: "#797a85",
             })}
           >
-            소프트웨어 개발자 허형준의 개인 포트폴리오 입니다. 취업을 위한
-            용도가 아닌 기록을 남기기 위함이 목적이며, 구체적인 인적 사항이
-            명시되지 않습니다. 해당 사이트의 코드는{" "}
+            {t(`ns:main.FooterDesc`)}{" "}
             <a
               css={css({
                 fontWeight: "500",
@@ -44,22 +45,31 @@ function Footer() {
             >
               https://github.com/DipokalLab/hhj-portfolio-v3
             </a>
-            에 있습니다.
           </p>
-          <Link url={"https://www.facebook.com/dipokalhhj"}>페이스북</Link>
-          <Link url={"https://github.com/DipokalLab"}>깃허브</Link>
+          <Link url={"https://www.facebook.com/dipokalhhj"}>
+            {t(`ns:platform.facebook`)}
+          </Link>
+          <Link url={"https://github.com/DipokalLab"}>
+            {t(`ns:platform.github`)}
+          </Link>
           <Link url={"https://www.instagram.com/hyeongjun.dev/"}>
-            인스타그램
+            {t(`ns:platform.instagram`)}
           </Link>
 
           {expend ? (
             <>
-              <Link url={"https://velog.io/@dipokalhhj"}>Velog {">"}</Link>
-              <Link url={"https://disquiet.io/@hhj"}>디스콰이엇 {">"}</Link>
-              <Link url={"https://www.linkedin.com/in/huhhyeongjun/"}>
-                링크드인 {">"}
+              <Link url={"https://velog.io/@dipokalhhj"}>
+                {t(`ns:platform.blog`)} {">"}
               </Link>
-              <Link url={"https://medium.com/@hyeongjun"}>미디엄 {">"}</Link>
+              <Link url={"https://disquiet.io/@hhj"}>
+                {t(`ns:platform.makerblog`)} {">"}
+              </Link>
+              <Link url={"https://www.linkedin.com/in/huhhyeongjun/"}>
+                {t(`ns:platform.linkedin`)} {">"}
+              </Link>
+              <Link url={"https://medium.com/@hyeongjun"}>
+                {t(`ns:platform.medium`)} {">"}
+              </Link>
             </>
           ) : (
             <p

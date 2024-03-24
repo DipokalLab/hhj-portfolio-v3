@@ -1,17 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { css } from "@emotion/react";
-
 import { Bold } from "../../components/common/Text";
+import { t } from "i18next";
 
 function LinksPage() {
   return (
     <div css={css({})}>
       <p css={css({ fontWeight: "300", fontSize: "1.6rem", margin: 0 })}>
-        <Bold>여러 플랫폼</Bold>에 서식하고 있습니다.
+        <Bold>{t(`ns:moreLink.title`)}</Bold>
+        {t(`ns:moreLink.titleNext`)}
       </p>
       <p css={css({ fontWeight: "500", fontSize: "1rem", color: "#797a85" })}>
-        링크드인, 인스타그램, 블로그에서 정기적으로 발행되는 포스트와 소식을
-        받아보실 수 있습니다.
+        {t(`ns:moreLink.description`)}
       </p>
 
       <div
@@ -19,7 +19,6 @@ function LinksPage() {
           display: "flex",
           justifyContent: "space-between",
           flexDirection: "row",
-          gap: "2rem",
           paddingTop: "2rem",
         })}
       >
@@ -78,7 +77,7 @@ function IconLink({ image, url }: { image: string; url: string }) {
             },
           })}
         >
-          <p>바로가기</p>
+          <p>{t(`ns:common.go`)}</p>
         </div>
         <img
           src={image}
