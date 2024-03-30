@@ -28,8 +28,9 @@ function IconButton({ onClick, children, isDisplay = false }: IconButtonType) {
         alignItems: "center",
         width: "3rem",
         height: "3rem",
-        backgroundColor: "#f2f3f5",
         cursor: "pointer",
+        backgroundColor: "#ffffff95",
+        backdropFilter: "blur(26px)",
       })}
     >
       <span className="material-symbols-outlined">{children}</span>

@@ -47,7 +47,7 @@ function ProjectItem({
   return (
     <div
       css={css({
-        flex: isImage ? "1 1 400px" : "1",
+        flex: isImage ? "1 1 300px" : "1",
         display: isShow ? "" : "none",
       })}
     >
