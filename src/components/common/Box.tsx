@@ -6,14 +6,20 @@ type BoxType = {
   onClick?: any;
   children: any;
   isDisplay?: boolean;
+  isBorder?: boolean;
 };
 
-function Box({ onClick, children, isDisplay = true }: BoxType) {
+function Box({
+  onClick,
+  children,
+  isDisplay = true,
+  isBorder = true,
+}: BoxType) {
   return (
     <div
       onClick={onClick}
       css={css({
-        border: "0.1rem solid #F0F0F4",
+        border: isBorder ? "0.1rem solid #F0F0F4" : "none",
         borderRadius: "1rem",
         width: "100%",
         display: isDisplay ? "" : "none",

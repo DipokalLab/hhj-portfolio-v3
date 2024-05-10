@@ -31,6 +31,7 @@ function Modal({ children, isOpen = false, onClose }: ModalType) {
         backgroundColor: "#ffffff",
         transition: "0.5s",
         overflowY: "scroll",
+        scrollbarWidth: "none",
       })}
     >
       <div
