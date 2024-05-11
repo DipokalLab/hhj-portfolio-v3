@@ -51,7 +51,7 @@ function ProjectItem({
         display: isShow ? "" : "none",
       })}
     >
-      <Box>
+      <Box isBorder={false}>
         <Modal onClose={handleClose} isOpen={isModalOpen}>
           {children}
         </Modal>
@@ -62,6 +62,17 @@ function ProjectItem({
             position: "relative",
             width: "100%",
             cursor: "pointer",
+            transform: "translateY(0px)",
+            transition: "0.4s",
+            borderRadius: "1rem",
+            border: "0.1rem solid #F0F0F4",
+
+            ":hover": {
+              transform: "translateY(-8px)",
+              boxShadow: "rgba(147, 148, 158, 0.25) 0px 7px 40px",
+
+              opacity: "100%",
+            },
           })}
         >
           {imageUrl && <ImageBox url={imageUrl}></ImageBox>}
@@ -81,14 +92,10 @@ function ProjectItem({
               transition: "0.1s",
               opacity: "0%",
               ":hover": {
-                backgroundColor: "#ffffff66",
-                backdropFilter: "blur(4px)",
                 opacity: "100%",
               },
             })}
-          >
-            <p>더보기</p>
-          </div>
+          ></div>
 
           <div
             css={css({

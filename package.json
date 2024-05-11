@@ -6,6 +6,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
+    "start:dev": "concurrently \"webpack --mode=development -w\" \"node app.js\"",
     "bundle": "webpack --mode=development -w",
     "bundle:prod": "webpack --mode=production"
   },

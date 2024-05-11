@@ -31,6 +31,7 @@ function Modal({ children, isOpen = false, onClose }: ModalType) {
         backgroundColor: "#ffffff",
         transition: "0.5s",
         overflowY: "scroll",
+        scrollbarWidth: "none",
       })}
     >
       <div
@@ -40,6 +41,7 @@ function Modal({ children, isOpen = false, onClose }: ModalType) {
         })}
       >
         {children}
+        <div css={css({ height: "3rem", width: "100%" })}></div>
       </div>
 
       <IconButton onClick={handleClose} isDisplay={true}>
