@@ -41,6 +41,7 @@ function Modal({ children, isOpen = false, onClose }: ModalType) {
         })}
       >
         {children}
+        <div css={css({ height: "3rem", width: "100%" })}></div>
       </div>
 
       <IconButton onClick={handleClose} isDisplay={true}>

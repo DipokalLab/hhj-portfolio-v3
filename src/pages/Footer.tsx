@@ -20,6 +20,7 @@ function Footer() {
           css={css({
             display: "flex",
             flexDirection: "column",
+            paddingBottom: "2rem",
           })}
         >
           <p css={css({ fontWeight: "300", fontSize: "0.8rem", margin: 0 })}>
