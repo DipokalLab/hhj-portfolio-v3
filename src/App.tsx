@@ -5,11 +5,7 @@ import "./App.css";
 import MainPage from "./pages/Main";
 
 function App() {
-  return (
-    <div>
-      <MainPage></MainPage>
-    </div>
-  );
+  return <MainPage></MainPage>;
 }
 
 export default App;

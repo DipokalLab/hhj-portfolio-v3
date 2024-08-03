@@ -23,15 +23,15 @@ function LinksPage() {
         })}
       >
         <IconLink
-          image="/public/logos/linkedin.svg"
+          image="/logos/linkedin.svg"
           url="https://www.linkedin.com/in/huhhyeongjun/"
         ></IconLink>
         <IconLink
-          image="/public/logos/instagram.svg"
+          image="/logos/instagram.svg"
           url="https://www.instagram.com/hyeongjun.dev/"
         ></IconLink>
         <IconLink
-          image="/public/logos/tistory.svg"
+          image="/logos/tistory.svg"
           url="https://devent.tistory.com/"
         ></IconLink>
       </div>
