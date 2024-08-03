@@ -41,7 +41,7 @@ function MainPage() {
   };
 
   return (
-    <div>
+    <>
       <Header></Header>
       <Modal onClose={handleClose} isOpen={isModalOpen}>
         <div css={css({ display: "flex", flexDirection: "column" })}>
@@ -77,7 +77,7 @@ function MainPage() {
       </Container>
 
       <Footer></Footer>
-    </div>
+    </>
   );
 }
 

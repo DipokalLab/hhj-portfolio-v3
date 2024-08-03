@@ -44,7 +44,7 @@ function FrondendPage() {
           title={t(`ns:frontendProject.archery.title`)}
           subtitle={t(`ns:frontendProject.archery.description`)}
           tags={["#ThreeJS", "#React"]}
-          imageUrl="/public/images/archery-01.jpg"
+          imageUrl="/images/archery-01.jpg"
         >
           <ProjectBody>
             <div>
@@ -71,19 +71,19 @@ function FrondendPage() {
               <ImageGallery>
                 <ImageBox
                   isAvailableZoom={true}
-                  url={"/public/images/archery-01.jpg"}
+                  url={"/images/archery-01.jpg"}
                 ></ImageBox>
                 <ImageBox
                   isAvailableZoom={true}
-                  url={"/public/images/archery-02.jpg"}
+                  url={"/images/archery-02.jpg"}
                 ></ImageBox>
                 <ImageBox
                   isAvailableZoom={true}
-                  url={"/public/images/archery-03.jpg"}
+                  url={"/images/archery-03.jpg"}
                 ></ImageBox>
                 <ImageBox
                   isAvailableZoom={true}
-                  url={"/public/images/archery-04.jpg"}
+                  url={"/images/archery-04.jpg"}
                 ></ImageBox>
               </ImageGallery>
             </div>
@@ -135,7 +135,7 @@ function FrondendPage() {
           title={t(`ns:frontendProject.nugget.title`)}
           subtitle={t(`ns:frontendProject.nugget.description`)}
           tags={["#CE", "#LitJS", "FFmpeg", "Electron"]}
-          imageUrl="/public/images/nugget-01.jpg"
+          imageUrl="/images/nugget-01.jpg"
         >
           <ProjectBody>
             <div>
@@ -166,23 +166,23 @@ function FrondendPage() {
               <ImageGallery>
                 <ImageBox
                   isAvailableZoom={true}
-                  url={"/public/images/nugget-01.jpg"}
+                  url={"/images/nugget-01.jpg"}
                 ></ImageBox>
                 <ImageBox
                   isAvailableZoom={true}
-                  url={"/public/images/nugget-02.jpg"}
+                  url={"/images/nugget-02.jpg"}
                 ></ImageBox>
                 <ImageBox
                   isAvailableZoom={true}
-                  url={"/public/images/nugget-03.jpg"}
+                  url={"/images/nugget-03.jpg"}
                 ></ImageBox>
                 <ImageBox
                   isAvailableZoom={true}
-                  url={"/public/images/nugget-04.jpg"}
+                  url={"/images/nugget-04.jpg"}
                 ></ImageBox>
                 <ImageBox
                   isAvailableZoom={true}
-                  url={"/public/images/nugget-05.jpg"}
+                  url={"/images/nugget-05.jpg"}
                 ></ImageBox>
               </ImageGallery>
             </div>
@@ -230,7 +230,7 @@ function FrondendPage() {
           title="Inlander"
           subtitle="UX와 디자인을 고려해 개발한 영어 학습 앱 입니다."
           tags={["#TypeScript", "#Emotion", "#TypeORM"]}
-          imageUrl="/public/images/inlander-01.jpg"
+          imageUrl="/images/inlander-01.jpg"
         >
           <ProjectBody>
             <div>
@@ -247,19 +247,19 @@ function FrondendPage() {
               <ImageGallery>
                 <ImageBox
                   isAvailableZoom={true}
-                  url={"/public/images/inlander-01.jpg"}
+                  url={"/images/inlander-01.jpg"}
                 ></ImageBox>
                 <ImageBox
                   isAvailableZoom={true}
-                  url={"/public/images/inlander-02.jpg"}
+                  url={"/images/inlander-02.jpg"}
                 ></ImageBox>
                 <ImageBox
                   isAvailableZoom={true}
-                  url={"/public/images/inlander-03.jpg"}
+                  url={"/images/inlander-03.jpg"}
                 ></ImageBox>
                 <ImageBox
                   isAvailableZoom={true}
-                  url={"/public/images/inlander-04.jpg"}
+                  url={"/images/inlander-04.jpg"}
                 ></ImageBox>
               </ImageGallery>
             </div>
@@ -297,7 +297,7 @@ function FrondendPage() {
           title="VR LightSaber"
           subtitle="WebVR 기술을 활용해서 날아오는 광선총을 광선검으로 튕깁니다."
           tags={["#ThreeJS", "#WebVR"]}
-          imageUrl="/public/images/saber-02.jpg"
+          imageUrl="/images/saber-02.jpg"
           isShow={isShowMore}
         >
           <ProjectBody>
@@ -325,11 +325,11 @@ function FrondendPage() {
               <ImageGallery>
                 <ImageBox
                   isAvailableZoom={true}
-                  url={"/public/images/saber-01.jpg"}
+                  url={"/images/saber-01.jpg"}
                 ></ImageBox>
                 <ImageBox
                   isAvailableZoom={true}
-                  url={"/public/images/saber-02.jpg"}
+                  url={"/images/saber-02.jpg"}
                 ></ImageBox>
               </ImageGallery>
             </div>
@@ -377,7 +377,7 @@ function FrondendPage() {
           title="세기의 지성인"
           subtitle="d3.js와 React를 통해 역사속 지성인을 탐구해봅니다."
           tags={["#d3.js", "#React"]}
-          imageUrl="/public/images/intelli-01.jpg"
+          imageUrl="/images/intelli-01.jpg"
           isShow={isShowMore}
         >
           <ProjectBody>
@@ -397,19 +397,19 @@ function FrondendPage() {
               <ImageGallery>
                 <ImageBox
                   isAvailableZoom={true}
-                  url={"/public/images/intelli-01.jpg"}
+                  url={"/images/intelli-01.jpg"}
                 ></ImageBox>
                 <ImageBox
                   isAvailableZoom={true}
-                  url={"/public/images/intelli-02.jpg"}
+                  url={"/images/intelli-02.jpg"}
                 ></ImageBox>
                 <ImageBox
                   isAvailableZoom={true}
-                  url={"/public/images/intelli-03.jpg"}
+                  url={"/images/intelli-03.jpg"}
                 ></ImageBox>
                 <ImageBox
                   isAvailableZoom={true}
-                  url={"/public/images/intelli-04.jpg"}
+                  url={"/images/intelli-04.jpg"}
                 ></ImageBox>
               </ImageGallery>
             </div>
@@ -457,7 +457,7 @@ function FrondendPage() {
           title="Maskers"
           subtitle="모두가 버튜버가 된다. 웹에서 동작하는 버튜버 플랫폼."
           tags={["#mediapipe", "#On Device AI", "#threejs"]}
-          imageUrl="/public/images/maskers-10.jpg"
+          imageUrl="/images/maskers-05.jpg"
           isShow={isShowMore}
         >
           <ProjectBody>
@@ -482,47 +482,47 @@ function FrondendPage() {
               <ImageGallery>
                 <ImageBox
                   isAvailableZoom={true}
-                  url={"/public/images/maskers-01.jpg"}
+                  url={"/images/maskers-01.jpg"}
                 ></ImageBox>
                 <ImageBox
                   isAvailableZoom={true}
-                  url={"/public/images/maskers-02.jpg"}
+                  url={"/images/maskers-02.jpg"}
                 ></ImageBox>
                 <ImageBox
                   isAvailableZoom={true}
-                  url={"/public/images/maskers-03.jpg"}
+                  url={"/images/maskers-03.jpg"}
                 ></ImageBox>
                 <ImageBox
                   isAvailableZoom={true}
-                  url={"/public/images/maskers-04.jpg"}
+                  url={"/images/maskers-04.jpg"}
                 ></ImageBox>
                 <ImageBox
                   isAvailableZoom={true}
-                  url={"/public/images/maskers-05.jpg"}
+                  url={"/images/maskers-05.jpg"}
                 ></ImageBox>{" "}
                 <ImageBox
                   isAvailableZoom={true}
-                  url={"/public/images/maskers-06.jpg"}
+                  url={"/images/maskers-06.jpg"}
                 ></ImageBox>{" "}
                 <ImageBox
                   isAvailableZoom={true}
-                  url={"/public/images/maskers-07.jpg"}
+                  url={"/images/maskers-07.jpg"}
                 ></ImageBox>{" "}
                 <ImageBox
                   isAvailableZoom={true}
-                  url={"/public/images/maskers-08.jpg"}
+                  url={"/images/maskers-08.jpg"}
                 ></ImageBox>{" "}
                 <ImageBox
                   isAvailableZoom={true}
-                  url={"/public/images/maskers-09.jpg"}
+                  url={"/images/maskers-09.jpg"}
                 ></ImageBox>{" "}
                 <ImageBox
                   isAvailableZoom={true}
-                  url={"/public/images/maskers-10.jpg"}
+                  url={"/images/maskers-10.jpg"}
                 ></ImageBox>{" "}
                 <ImageBox
                   isAvailableZoom={true}
-                  url={"/public/images/maskers-11.jpg"}
+                  url={"/images/maskers-11.jpg"}
                 ></ImageBox>
               </ImageGallery>
             </div>
@@ -578,7 +578,7 @@ function FrondendPage() {
           title="디자인 시스템 v2"
           subtitle="React Design System"
           tags={["#Emotion", "#React", "#Design"]}
-          imageUrl="/public/images/dds-01.jpg"
+          imageUrl="/images/dds-01.jpg"
           isShow={isShowMore}
         >
           <ProjectBody>
@@ -610,7 +610,7 @@ function FrondendPage() {
               <ImageGallery>
                 <ImageBox
                   isAvailableZoom={true}
-                  url={"/public/images/dds-01.jpg"}
+                  url={"/images/dds-01.jpg"}
                 ></ImageBox>
               </ImageGallery>
             </div>
