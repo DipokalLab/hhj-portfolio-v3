@@ -4,8 +4,13 @@ import { ProjectBody, ProjectPost } from "../../components/Project";
 import { Button } from "../../components/common/Button";
 import { Title, Description } from "../../components/common/Text";
 import { Container } from "../../components/Container";
+import { useEffect } from "react";
 
 export function FrontendMaskers() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <Container>
       <ProjectBody>

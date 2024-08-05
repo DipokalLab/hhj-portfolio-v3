@@ -9,13 +9,20 @@ import { ImageBox, ImageGallery } from "../../components/Image";
 import { Button } from "../../components/common/Button";
 import { Description, Title } from "../../components/common/Text";
 import { t } from "i18next";
+import { usePageStore } from "../../store";
 
 function FrondendPage() {
-  const [isShowMore, setIsShowMore] = useState(false);
+  const isFrontendOpenMore = usePageStore(
+    (state: any) => state.isFrontendOpenMore
+  );
+  const setFrontendOpenMore = usePageStore(
+    (state: any) => state.setFrontendOpenMore
+  );
 
   const handleClickMore = () => {
-    setIsShowMore(true);
+    setFrontendOpenMore(true);
   };
+
   return (
     <div css={css({})}>
       <p css={css({ fontWeight: "300", fontSize: "1.6rem", margin: 0 })}>
@@ -69,7 +76,7 @@ function FrondendPage() {
           subtitle="WebVR 기술을 활용해서 날아오는 광선총을 광선검으로 튕깁니다."
           tags={["#ThreeJS", "#WebVR"]}
           imageUrl="/images/saber-02.jpg"
-          isShow={isShowMore}
+          isShow={isFrontendOpenMore}
           clickTo="/project/lightsaber"
         ></ProjectItem>
 
@@ -78,7 +85,7 @@ function FrondendPage() {
           subtitle="d3.js와 React를 통해 역사속 지성인을 탐구해봅니다."
           tags={["#d3.js", "#React"]}
           imageUrl="/images/intelli-01.jpg"
-          isShow={isShowMore}
+          isShow={isFrontendOpenMore}
           clickTo="/project/intelligence"
         ></ProjectItem>
 
@@ -87,7 +94,7 @@ function FrondendPage() {
           subtitle="모두가 버튜버가 된다. 웹에서 동작하는 버튜버 플랫폼."
           tags={["#mediapipe", "#On Device AI", "#threejs"]}
           imageUrl="/images/maskers-05.jpg"
-          isShow={isShowMore}
+          isShow={isFrontendOpenMore}
           clickTo="/project/maskers"
         ></ProjectItem>
 
@@ -96,12 +103,12 @@ function FrondendPage() {
           subtitle="React Design System"
           tags={["#Emotion", "#React", "#Design"]}
           imageUrl="/images/dds-01.jpg"
-          isShow={isShowMore}
+          isShow={isFrontendOpenMore}
           clickTo="/project/designsystem"
         ></ProjectItem>
       </div>
 
-      {!isShowMore && (
+      {!isFrontendOpenMore && (
         <Button onClick={handleClickMore}>{t(`ns:common.more`)}</Button>
       )}
     </div>
