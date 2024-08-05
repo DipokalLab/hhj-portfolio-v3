@@ -4,6 +4,7 @@ import { Box } from "./common/Box";
 import { Badge } from "./common/Badge";
 import { Modal } from "./common/Modal";
 import { ImageBox } from "./Image";
+import { useNavigate } from "react-router-dom";
 
 type ItemType = {
   title?: string;
@@ -13,6 +14,7 @@ type ItemType = {
   imageUrl?: string;
   isShow?: boolean;
   isImage?: boolean;
+  clickTo?: string;
 };
 
 type PostType = {
@@ -34,14 +36,18 @@ function ProjectItem({
   children,
   isShow = true,
   isImage = true,
+  clickTo,
 }: ItemType) {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const navigate = useNavigate();
+
   const handleClose = () => {
     setIsModalOpen(false);
   };
 
   const handleClick = () => {
-    setIsModalOpen(true);
+    navigate(clickTo);
+    //setIsModalOpen(true);
   };
 
   return (
