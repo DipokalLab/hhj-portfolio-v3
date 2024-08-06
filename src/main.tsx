@@ -10,6 +10,8 @@ import { FrontendDesignsystem } from "./pages/frontend/Designsystem.tsx";
 import { FrontendIntelligence } from "./pages/frontend/Intelligence.tsx";
 import { FrontendMaskers } from "./pages/frontend/Maskers.tsx";
 import { FrontendLightsaber } from "./pages/frontend/Lightsaber.tsx";
+import { BackendOcr } from "./pages/backend/Ocr.tsx";
+import { BackendDockerDeploy } from "./pages/backend/DockerDeploy.tsx";
 
 const router = createBrowserRouter([
   {
@@ -43,6 +45,14 @@ const router = createBrowserRouter([
   {
     path: "/project/lightsaber",
     element: <FrontendLightsaber />,
+  },
+  {
+    path: "/project/ocr",
+    element: <BackendOcr />,
+  },
+  {
+    path: "/project/docker",
+    element: <BackendDockerDeploy />,
   },
 ]);
 

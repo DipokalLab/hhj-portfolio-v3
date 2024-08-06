@@ -22,7 +22,8 @@ export function FrontendLightsaber() {
           <Description>
             ThreeJS WebXR 기술을 활용해 광선검을 휘두르는 게임입니다. 60fps를
             유지하기 위해 OBB 충돌과 오브젝트 최적화를 진행했으며 오픈소스로
-            공개했습니다.
+            공개했습니다. 오큘러스 VR 헤드셋을 통해 접근할 수 있으며 구형
+            버전에서도 동작 가능하도록 최적화에 신경썼습니다.
           </Description>
         </div>
 
