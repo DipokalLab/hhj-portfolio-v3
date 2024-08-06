@@ -5,6 +5,7 @@ import { Button } from "../../components/common/Button";
 import { Title, Description } from "../../components/common/Text";
 import { Container } from "../../components/Container";
 import { useEffect } from "react";
+import { Nav } from "../../components/common/Nav";
 
 export function FrontendInlander() {
   useEffect(() => {
@@ -13,6 +14,8 @@ export function FrontendInlander() {
 
   return (
     <Container>
+      <Nav enableBack={true} />
+
       <ProjectBody>
         <div>
           <Title>프로젝트 소개</Title>

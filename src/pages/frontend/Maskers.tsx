@@ -5,6 +5,7 @@ import { Button } from "../../components/common/Button";
 import { Title, Description } from "../../components/common/Text";
 import { Container } from "../../components/Container";
 import { useEffect } from "react";
+import { Nav } from "../../components/common/Nav";
 
 export function FrontendMaskers() {
   useEffect(() => {
@@ -13,6 +14,8 @@ export function FrontendMaskers() {
 
   return (
     <Container>
+      <Nav enableBack={true} />
+
       <ProjectBody>
         <div>
           <Title>프로젝트 소개</Title>
@@ -23,9 +26,10 @@ export function FrontendMaskers() {
             PC든 버튜버를 체험해볼 수 있습니다. WebRTC, ThreeJS, 최적화, On
             Device AI등 현재 최신 기술을 사용해서 웹 환경에서도 끊김없이 페이셜
             트래킹을 수행할 수 있습니다.
-            <br />총 2가지 버전이 있으며 flat 3d Face Mode와 버튜버 스타일 2D
-            모드가 존재합니다. 사용자의 기호에 따라 선택할 수 있으며 버튜버에
-            거부감이 드는 분들은 기존 Face Mode를 사용하면 되도록 설계했습니다.
+            <br /> <br />총 2가지 버전이 있으며 flat 3d Face Mode와 버튜버
+            스타일 2D 모드가 존재합니다. 사용자의 기호에 따라 선택할 수 있으며
+            버튜버에 거부감이 드는 분들은 기존 Face Mode를 사용하면 되도록
+            설계했습니다.
           </Description>
         </div>
 

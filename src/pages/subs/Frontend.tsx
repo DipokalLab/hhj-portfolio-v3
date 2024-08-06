@@ -8,6 +8,7 @@ import {
 import { ImageBox, ImageGallery } from "../../components/Image";
 import { Button } from "../../components/common/Button";
 import { Description, Title } from "../../components/common/Text";
+import i18n from "../../i18n";
 import { t } from "i18next";
 import { usePageStore } from "../../store";
 
@@ -26,7 +27,6 @@ function FrondendPage() {
   return (
     <div css={css({})}>
       <p css={css({ fontWeight: "300", fontSize: "1.6rem", margin: 0 })}>
-        {" "}
         <b css={css({ fontWeight: 500 })}>{t(`ns:frontendProject.title`)}</b>
         {t(`ns:frontendProject.titleNext`)}
       </p>

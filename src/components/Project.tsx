@@ -108,7 +108,7 @@ function ProjectItem({
               position: "relative",
               display: "flex",
               flexDirection: "column",
-              gap: "0.6rem",
+              gap: "0.5rem",
               padding: "1rem",
             })}
           >
@@ -126,7 +126,7 @@ function ProjectItem({
               {subtitle}
             </p>
             <div
-              css={css({ display: "flex", gap: "0.5rem", marginTop: "0.5rem" })}
+              css={css({ display: "flex", gap: "0.5rem", marginTop: "1rem" })}
             >
               {tags.map((tag) => (
                 <Badge>{tag}</Badge>
@@ -208,6 +208,7 @@ function ProjectBody({ children }: BodyType) {
         flexDirection: "column",
         gap: "2rem",
         padding: "1rem 0",
+        paddingTop: "3rem",
       })}
     >
       {children}
