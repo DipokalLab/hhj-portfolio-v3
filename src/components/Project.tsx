@@ -4,6 +4,7 @@ import { Box } from "./common/Box";
 import { Badge } from "./common/Badge";
 import { Modal } from "./common/Modal";
 import { ImageBox } from "./Image";
+import { useNavigate } from "react-router-dom";
 
 type ItemType = {
   title?: string;
@@ -13,6 +14,7 @@ type ItemType = {
   imageUrl?: string;
   isShow?: boolean;
   isImage?: boolean;
+  clickTo?: string;
 };
 
 type PostType = {
@@ -34,14 +36,18 @@ function ProjectItem({
   children,
   isShow = true,
   isImage = true,
+  clickTo,
 }: ItemType) {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const navigate = useNavigate();
+
   const handleClose = () => {
     setIsModalOpen(false);
   };
 
   const handleClick = () => {
-    setIsModalOpen(true);
+    navigate(clickTo);
+    //setIsModalOpen(true);
   };
 
   return (
@@ -102,7 +108,7 @@ function ProjectItem({
               position: "relative",
               display: "flex",
               flexDirection: "column",
-              gap: "0.6rem",
+              gap: "0.5rem",
               padding: "1rem",
             })}
           >
@@ -120,7 +126,7 @@ function ProjectItem({
               {subtitle}
             </p>
             <div
-              css={css({ display: "flex", gap: "0.5rem", marginTop: "0.5rem" })}
+              css={css({ display: "flex", gap: "0.5rem", marginTop: "1rem" })}
             >
               {tags.map((tag) => (
                 <Badge>{tag}</Badge>
@@ -202,6 +208,7 @@ function ProjectBody({ children }: BodyType) {
         flexDirection: "column",
         gap: "2rem",
         padding: "1rem 0",
+        paddingTop: "3rem",
       })}
     >
       {children}

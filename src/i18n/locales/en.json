@@ -23,30 +23,30 @@
   "frontendProject": {
     "title": "Frontend Developer",
     "titleNext": "",
-    "description": "I'm making visible software. Exploring cutting edge web technologies used on the front end such as 3D mini-games using ThreeJS, WebRTC real-time communication, and JS-based ML. Above all, it's my main area of technology.",
+    "description": "Making visible software. Exploring cutting edge web technologies used on the frontend such as 3D mini-games using ThreeJS, WebRTC real-time communication, and JS-based ML. Above all, it's my main area of technology.",
     "archery": {
       "title": "Archery",
-      "description": "This is a three JS based archery game. The UI part was developed by React and TypeScript."
+      "description": "A Three JS based archery game. The UI part was developed by React and TypeScript."
     },
     "nugget": {
       "title": "Nugget",
-      "description": "It is a video editing software using Custom Elements, Electron, and FFmpeg."
+      "description": "A video editing software using Custom Elements, Electron, and FFmpeg."
     }
   },
   "backendProject": {
     "title": "Backend Developer",
     "titleNext": "",
-    "description": "I use NodeJS Express. I'm focused on designing scalable and robust servers when I'm developing them."
+    "description": "NodeJS Express. I'm focused on designing for scalable and robust servers when I'm developing them."
   },
   "writer": {
     "title": "Writer",
     "titleNext": "",
-    "description": "I'm writing in Korean on several blog platforms. I usually share technical columns, personal essays, etc. And I'm excited to share the knowledge I've learned with others. *I recommend you turn on the Google translator and watch it."
+    "description": "Writing in Korean on several blog platforms. I usually share technical columns, personal essays, etc. And I'm excited to share the knowledge I've learned with others. *I recommend you turn on the Google translator and watch it."
   },
   "informationSecurity": {
     "title": "Information security",
     "titleNext": "",
-    "description": "It's my area of interest. I mainly solve wargames related to web hacking and encryption."
+    "description": "My area of interest. I mainly solve wargames related to web hacking and encryption."
   },
   "moreLink": {
     "title": "Visit My Website",

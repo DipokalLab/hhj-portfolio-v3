@@ -12,17 +12,19 @@ import { Container } from "../components/Container";
 import { LinksPage } from "./subs/Links";
 import i18n from "../i18n";
 import { t } from "i18next";
+import { Nav } from "../components/common/Nav";
+import { getCookies, setCookie } from "../utils/cookie";
 
 function MainPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [nowLanguage, setNowLanguage] = useState("ko");
+  const [nowLanguage, setNowLanguage] = useState("en");
 
   const handleClose = () => {
     setIsModalOpen(false);
   };
 
   const handleClickOpenModal = () => {
-    setIsModalOpen(true);
+    setIsModalOpen(!isModalOpen);
   };
 
   const handleClickOldPage = () => {
@@ -30,12 +32,12 @@ function MainPage() {
   };
 
   const onChangeLanguage = () => {
+    console.log(nowLanguage);
     if (nowLanguage == "ko") {
       setNowLanguage("en");
       i18n.changeLanguage("en");
     } else {
       setNowLanguage("ko");
-
       i18n.changeLanguage("ko");
     }
   };
@@ -43,22 +45,7 @@ function MainPage() {
   return (
     <>
       <Header></Header>
-      <Modal onClose={handleClose} isOpen={isModalOpen}>
-        <div css={css({ display: "flex", flexDirection: "column" })}>
-          <div css={css({ display: "flex", gap: "1rem" })}>
-            <Button onClick={handleClickOldPage}>
-              {t(`ns:main.PrevPortfolio`)}
-            </Button>
-            <Button onClick={onChangeLanguage}>
-              {t(`ns:main.changeLanguage`)}
-            </Button>
-          </div>
-        </div>
-      </Modal>
-
-      <IconButton onClick={handleClickOpenModal} isDisplay={!isModalOpen}>
-        person
-      </IconButton>
+      <Nav onChangeLang={onChangeLanguage} />
 
       <Container>
         <div

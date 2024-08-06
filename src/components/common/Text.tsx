@@ -16,7 +16,6 @@ function Title({ children }: TextType) {
         marginBottom: "1rem",
       })}
     >
-      {" "}
       <b css={css({ fontWeight: 500 })}>{children}</b>
     </p>
   );
@@ -26,7 +25,7 @@ function Description({ children }: TextType) {
   return (
     <p
       css={css({
-        fontWeight: "500",
+        fontWeight: "300",
         fontSize: "1rem",
         margin: 0,
         color: "#797a85",
