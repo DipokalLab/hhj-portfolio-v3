@@ -17,6 +17,7 @@ function Badge({ children }: BadgeType) {
         fontWeight: "500",
         fontSize: "0.8rem",
         color: "#7F8BAA",
+        whiteSpace: "nowrap",
       })}
     >
       {children}

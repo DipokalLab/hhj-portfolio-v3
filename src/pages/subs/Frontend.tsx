@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { css } from "@emotion/react";
 import {
   ProjectBody,
+  ProjectFixedItem,
   ProjectItem,
   ProjectPost,
 } from "../../components/Project";
@@ -47,65 +48,65 @@ function FrondendPage() {
           },
         })}
       >
-        <ProjectItem
+        <ProjectFixedItem
           title={t(`ns:frontendProject.archery.title`)}
           subtitle={t(`ns:frontendProject.archery.description`)}
           tags={["#ThreeJS", "#React"]}
           imageUrl="/images/archery-01.jpg"
           clickTo="/project/archery"
-        ></ProjectItem>
+        ></ProjectFixedItem>
 
-        <ProjectItem
+        <ProjectFixedItem
           title={t(`ns:frontendProject.nugget.title`)}
           subtitle={t(`ns:frontendProject.nugget.description`)}
           tags={["#CE", "#LitJS", "FFmpeg", "Electron"]}
           imageUrl="/images/nugget-01.jpg"
           clickTo="/project/nugget"
-        ></ProjectItem>
+        ></ProjectFixedItem>
 
-        <ProjectItem
+        <ProjectFixedItem
+          title={t(`ns:frontendProject.maskers.title`)}
+          subtitle={t(`ns:frontendProject.maskers.description`)}
+          tags={["#mediapipe", "#On Device AI", "#threejs"]}
+          imageUrl="/images/maskers-05.jpg"
+          clickTo="/project/maskers"
+        ></ProjectFixedItem>
+
+        <ProjectFixedItem
           title="Inlander"
           subtitle="UX와 디자인을 고려해 개발한 영어 학습 앱 입니다."
           tags={["#TypeScript", "#Emotion", "#TypeORM"]}
           imageUrl="/images/inlander-01.jpg"
+          isShow={isFrontendOpenMore}
           clickTo="/project/inlander"
-        ></ProjectItem>
+        ></ProjectFixedItem>
 
-        <ProjectItem
-          title="VR LightSaber"
-          subtitle="WebVR 기술을 활용해서 날아오는 광선총을 광선검으로 튕깁니다."
+        <ProjectFixedItem
+          title={t(`ns:frontendProject.lightsaber.title`)}
+          subtitle={t(`ns:frontendProject.lightsaber.description`)}
           tags={["#ThreeJS", "#WebVR"]}
           imageUrl="/images/saber-02.jpg"
           isShow={isFrontendOpenMore}
           clickTo="/project/lightsaber"
-        ></ProjectItem>
+        ></ProjectFixedItem>
 
-        <ProjectItem
+        <ProjectFixedItem
           title="세기의 지성인"
           subtitle="d3.js와 React를 통해 역사속 지성인을 탐구해봅니다."
           tags={["#d3.js", "#React"]}
           imageUrl="/images/intelli-01.jpg"
           isShow={isFrontendOpenMore}
           clickTo="/project/intelligence"
-        ></ProjectItem>
+        ></ProjectFixedItem>
 
-        <ProjectItem
-          title="Maskers"
-          subtitle="모두가 버튜버가 된다. 웹에서 동작하는 버튜버 플랫폼."
-          tags={["#mediapipe", "#On Device AI", "#threejs"]}
-          imageUrl="/images/maskers-05.jpg"
-          isShow={isFrontendOpenMore}
-          clickTo="/project/maskers"
-        ></ProjectItem>
-
-        <ProjectItem
+        <ProjectFixedItem
           title="디자인 시스템 v2"
           subtitle="React Design System"
           tags={["#Emotion", "#React", "#Design"]}
           imageUrl="/images/dds-01.jpg"
           isShow={isFrontendOpenMore}
           clickTo="/project/designsystem"
-        ></ProjectItem>
+        ></ProjectFixedItem>
       </div>
 
       {!isFrontendOpenMore && (
