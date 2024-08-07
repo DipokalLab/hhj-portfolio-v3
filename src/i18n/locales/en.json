@@ -31,6 +31,14 @@
     "nugget": {
       "title": "Nugget",
       "description": "A video editing software using Custom Elements, Electron, and FFmpeg."
+    },
+    "lightsaber": {
+      "title": "VR LightSaber",
+      "description": "A VR lightsaber game that you enjoy on the web."
+    },
+    "maskers": {
+      "title": "Maskers",
+      "description": "Virtual YouTuber platform on the web environment."
     }
   },
   "backendProject": {

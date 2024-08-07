@@ -31,6 +31,10 @@
     "nugget": {
       "title": "Nugget",
       "description": "Custom Elements와 Electron, FFmpeg를 이용한 영상편집 소프트웨어 입니다."
+    },
+    "lightsaber": {
+      "title": "VR LightSaber",
+      "description": "A VR lightsaber game that you enjoy on the web."
     }
   },
   "backendProject": {
