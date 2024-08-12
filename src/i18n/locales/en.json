@@ -60,5 +60,10 @@
     "title": "Visit My Website",
     "titleNext": "",
     "description": "You can find me on the internet!"
+  },
+  "hackathon": {
+    "title": "Hackathoner",
+    "titleNext": "",
+    "description": "I participated in 3 hackathons. I enjoy the challenging in the Hackathon and love that powerful ambience"
   }
 }
