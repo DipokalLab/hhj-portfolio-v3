@@ -21,7 +21,109 @@ export function HackathonPage() {
           flexDirection: "row",
           paddingTop: "2rem",
         })}
-      ></div>
+      >
+        <div
+          css={css({
+            display: "flex",
+            flexDirection: "column",
+            paddingTop: "2rem",
+            width: "100%",
+          })}
+        >
+          <Item date={"2024. 08 4days"}>
+            <p>Junction Asia 2024 (participation)</p>
+          </Item>
+          <Item date={"2024. 07 4days"}>
+            <p>2024 SPARCS AI Hackathon (finals)</p>
+          </Item>
+          <Item date={"2024. 05 4days"}>
+            <p>goormthon in JEJU 10th (3rd prize)</p>
+          </Item>
+
+          <Item date={"2024. 02 2days"}>
+            <p>Impacthon 1th (2nd prize)</p>
+          </Item>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Item({ children, date }: any) {
+  return (
+    <div
+      css={css({
+        position: "relative",
+
+        width: "100%",
+        display: "flex",
+        flexDirection: "row",
+        gap: "1rem",
+      })}
+    >
+      <div
+        css={css({
+          width: "4px",
+          height: "100%",
+          backgroundColor: "#F0F0F4",
+        })}
+      >
+        <div
+          css={css({
+            position: "absolute",
+            width: "12px",
+            height: "12px",
+            top: "-4px",
+            left: "-4px",
+
+            borderRadius: "100px",
+            backgroundColor: "#797a85",
+          })}
+        ></div>
+      </div>
+
+      <div
+        css={css({
+          width: "100%",
+        })}
+      >
+        <p
+          css={css({
+            position: "absolute",
+            top: "-17px",
+            margin: 0,
+            paddingTop: "6px",
+            color: "#797a85",
+          })}
+        >
+          {date}
+        </p>
+        <div
+          css={css({
+            cursor: "pointer",
+            marginTop: "36px",
+            transform: "translateY(0px)",
+            transition: "0.4s",
+            borderRadius: "1rem",
+            border: "0.1rem solid #F0F0F4",
+            padding: "0.5rem 1.5rem",
+            ":hover": {
+              transform: "translateY(-8px)",
+              boxShadow: "rgba(147, 148, 158, 0.25) 0px 7px 40px",
+
+              opacity: "100%",
+            },
+          })}
+        >
+          {children}
+        </div>
+
+        <div
+          css={css({
+            marginBottom: "36px",
+          })}
+        ></div>
+      </div>
     </div>
   );
 }
