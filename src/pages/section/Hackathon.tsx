@@ -2,8 +2,15 @@ import React, { useEffect, useState } from "react";
 import { css } from "@emotion/react";
 import { Bold } from "../../components/common/Text";
 import { t } from "i18next";
+import { useNavigate } from "react-router-dom";
 
 export function HackathonPage() {
+  const navigate = useNavigate();
+
+  const handleClick = (clickTo) => {
+    navigate(`/hackathon/${clickTo}`);
+  };
+
   return (
     <div css={css({})}>
       <p css={css({ fontWeight: "300", fontSize: "1.6rem", margin: 0 })}>
@@ -30,7 +37,7 @@ export function HackathonPage() {
             width: "100%",
           })}
         >
-          <Item date={"2024. 08 4days"}>
+          <Item date={"2024. 08 3days"}>
             <p>Junction Asia 2024 (participation)</p>
           </Item>
           <Item date={"2024. 07 4days"}>
@@ -40,7 +47,7 @@ export function HackathonPage() {
             <p>goormthon in JEJU 10th (3rd prize)</p>
           </Item>
 
-          <Item date={"2024. 02 2days"}>
+          <Item date={"2024. 02 2days"} onClick={() => handleClick("1st")}>
             <p>Impacthon 1th (2nd prize)</p>
           </Item>
         </div>
@@ -49,9 +56,10 @@ export function HackathonPage() {
   );
 }
 
-function Item({ children, date }: any) {
+function Item({ children, date, onClick }: any) {
   return (
     <div
+      onClick={onClick}
       css={css({
         position: "relative",
 

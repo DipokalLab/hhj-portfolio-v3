@@ -12,6 +12,7 @@ import { FrontendMaskers } from "./pages/frontend/Maskers.tsx";
 import { FrontendLightsaber } from "./pages/frontend/Lightsaber.tsx";
 import { BackendOcr } from "./pages/backend/Ocr.tsx";
 import { BackendDockerDeploy } from "./pages/backend/DockerDeploy.tsx";
+import { FirstHackathonPage } from "./pages/hackathon/1st.tsx";
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,10 @@ const router = createBrowserRouter([
   {
     path: "/project/docker",
     element: <BackendDockerDeploy />,
+  },
+  {
+    path: "/hackathon/1st",
+    element: <FirstHackathonPage />,
   },
 ]);
 
