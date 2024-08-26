@@ -37,6 +37,9 @@ export function HackathonPage() {
             width: "100%",
           })}
         >
+          <Item date={"2024. 08 2days"}>
+            <p>2024 GDSC KAIST SPARKLINGTHON (2nd prize)</p>
+          </Item>
           <Item date={"2024. 08 3days"}>
             <p>Junction Asia 2024 (participation)</p>
           </Item>
