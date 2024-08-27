@@ -13,11 +13,16 @@ import { FrontendLightsaber } from "./pages/frontend/Lightsaber.tsx";
 import { BackendOcr } from "./pages/backend/Ocr.tsx";
 import { BackendDockerDeploy } from "./pages/backend/DockerDeploy.tsx";
 import { FirstHackathonPage } from "./pages/hackathon/1st.tsx";
+import { Card } from "./pages/Card.tsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+  },
+  {
+    path: "/card",
+    element: <Card />,
   },
   {
     path: "/project/archery",
