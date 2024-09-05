@@ -40,6 +40,8 @@ export function FirstHackathonPage() {
               있었습니다. 내가 헛되이 배우지 않았다는 생각과 더 배워야겠다는
               도전적인 마음가짐을 얻었습니다.
             </Description>
+
+            <Description>~ 작성중</Description>
           </div>
           <div>
             <Title>깃허브 링크</Title>
