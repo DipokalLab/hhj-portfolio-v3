@@ -97,6 +97,8 @@ export function Nav({
             <Button onClick={handleClickOldPage}>
               {t(`ns:main.PrevPortfolio`)}
             </Button>
+
+            <Button onClick={() => navigate("/card")}>Card</Button>
           </div>
         </div>
       </Modal>

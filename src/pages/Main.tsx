@@ -3,17 +3,19 @@ import React, { useEffect, useState } from "react";
 import { css } from "@emotion/react";
 import { Modal } from "../components/common/Modal";
 import { Button, IconButton } from "../components/common/Button";
-import { FrondendPage } from "./subs/Frontend";
-import { BackendPage } from "./subs/Backend";
-import { PostPage } from "./subs/Post";
-import { SecurityPage } from "./subs/Security";
+import { FrondendPage } from "./section/Frontend";
+import { BackendPage } from "./section/Backend";
+import { PostPage } from "./section/Post";
+import { SecurityPage } from "./section/Security";
+import { LinksPage } from "./section/Links";
+
 import { Footer } from "./Footer";
 import { Container } from "../components/Container";
-import { LinksPage } from "./subs/Links";
 import i18n from "../i18n";
 import { t } from "i18next";
 import { Nav } from "../components/common/Nav";
 import { getCookies, setCookie } from "../utils/cookie";
+import { HackathonPage } from "./section/Hackathon";
 
 function MainPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -55,11 +57,13 @@ function MainPage() {
             gap: "30vh",
           })}
         >
-          <FrondendPage></FrondendPage>
-          <BackendPage></BackendPage>
-          <PostPage></PostPage>
-          <SecurityPage></SecurityPage>
-          <LinksPage></LinksPage>
+          <FrondendPage />
+          <BackendPage />
+          <PostPage />
+          <SecurityPage />
+          <HackathonPage />
+
+          <LinksPage />
         </div>
       </Container>
 
