@@ -15,7 +15,7 @@ function Container({ children }: any) {
         css={css({
           display: "flex",
           width: "100%",
-          padding: "1rem 1rem",
+          padding: "2.5rem 1rem",
           "@media(min-width: 1200px)": {
             maxWidth: "1200px",
           },
