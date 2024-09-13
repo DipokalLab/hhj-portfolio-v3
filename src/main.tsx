@@ -14,6 +14,7 @@ import { BackendOcr } from "./pages/backend/Ocr.tsx";
 import { BackendDockerDeploy } from "./pages/backend/DockerDeploy.tsx";
 import { FirstHackathonPage } from "./pages/hackathon/1st.tsx";
 import { Card } from "./pages/Card.tsx";
+import { NotFound } from "./pages/NotFound.tsx";
 
 const router = createBrowserRouter([
   {
@@ -63,6 +64,10 @@ const router = createBrowserRouter([
   {
     path: "/hackathon/1st",
     element: <FirstHackathonPage />,
+  },
+  {
+    path: "/*",
+    element: <NotFound />,
   },
 ]);
 
