@@ -37,16 +37,16 @@ export function HackathonPage() {
             width: "100%",
           })}
         >
-          <Item date={"2024. 08 2days"}>
+          <Item date={"2024. 08 2days"} onClick={() => handleClick("5th")}>
             <p>2024 GDSC KAIST SPARKLINGTHON (2nd prize)</p>
           </Item>
-          <Item date={"2024. 08 3days"}>
+          <Item date={"2024. 08 3days"} onClick={() => handleClick("4th")}>
             <p>Junction Asia 2024 (participation)</p>
           </Item>
-          <Item date={"2024. 07 4days"}>
+          <Item date={"2024. 07 4days"} onClick={() => handleClick("3rd")}>
             <p>2024 SPARCS AI Hackathon (finals)</p>
           </Item>
-          <Item date={"2024. 05 4days"}>
+          <Item date={"2024. 05 4days"} onClick={() => handleClick("2nd")}>
             <p>goormthon in JEJU 10th (3rd prize)</p>
           </Item>
 

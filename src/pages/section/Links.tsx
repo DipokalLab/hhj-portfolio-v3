@@ -32,7 +32,7 @@ function LinksPage() {
         ></IconLink>
         <IconLink
           image="/logos/tistory.svg"
-          url="https://devent.tistory.com/"
+          url="https://devent.tistory.com"
         ></IconLink>
       </div>
     </div>

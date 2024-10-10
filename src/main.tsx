@@ -14,6 +14,11 @@ import { BackendOcr } from "./pages/backend/Ocr.tsx";
 import { BackendDockerDeploy } from "./pages/backend/DockerDeploy.tsx";
 import { FirstHackathonPage } from "./pages/hackathon/1st.tsx";
 import { Card } from "./pages/Card.tsx";
+import { NotFound } from "./pages/NotFound.tsx";
+import { SecondHackathonPage } from "./pages/hackathon/2nd.tsx";
+import { ThirdHackathonPage } from "./pages/hackathon/3rd.tsx";
+import { FourthHackathonPage } from "./pages/hackathon/4th.tsx";
+import { FifthHackathonPage } from "./pages/hackathon/5th.tsx";
 
 const router = createBrowserRouter([
   {
@@ -63,6 +68,26 @@ const router = createBrowserRouter([
   {
     path: "/hackathon/1st",
     element: <FirstHackathonPage />,
+  },
+  {
+    path: "/hackathon/2nd",
+    element: <SecondHackathonPage />,
+  },
+  {
+    path: "/hackathon/3rd",
+    element: <ThirdHackathonPage />,
+  },
+  {
+    path: "/hackathon/4th",
+    element: <FourthHackathonPage />,
+  },
+  {
+    path: "/hackathon/5th",
+    element: <FifthHackathonPage />,
+  },
+  {
+    path: "/*",
+    element: <NotFound />,
   },
 ]);
 

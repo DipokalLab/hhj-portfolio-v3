@@ -124,6 +124,7 @@ function ImageModal({ children, isOpen = false, onClose }: ImageModalType) {
           css={css({
             width: "100%",
             padding: "2rem",
+            marginBottom: "env(safe-area-inset-bottom)",
           })}
         >
           <Button onClick={handleClose}>닫기</Button>
