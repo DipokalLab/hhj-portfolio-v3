@@ -31,8 +31,8 @@ function LinksPage() {
           url="https://www.instagram.com/hyeongjun.dev/"
         ></IconLink>
         <IconLink
-          image="/logos/threads.svg"
-          url="https://www.threads.net/@hyeongjun.dev"
+          image="/logos/tistory.svg"
+          url="https://devent.tistory.com"
         ></IconLink>
       </div>
     </div>
