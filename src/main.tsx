@@ -19,6 +19,7 @@ import { SecondHackathonPage } from "./pages/hackathon/2nd.tsx";
 import { ThirdHackathonPage } from "./pages/hackathon/3rd.tsx";
 import { FourthHackathonPage } from "./pages/hackathon/4th.tsx";
 import { FifthHackathonPage } from "./pages/hackathon/5th.tsx";
+import { FrontendFleet } from "./pages/frontend/Fleet.tsx";
 
 const router = createBrowserRouter([
   {
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
   {
     path: "/project/lightsaber",
     element: <FrontendLightsaber />,
+  },
+  {
+    path: "/project/fleet",
+    element: <FrontendFleet />,
   },
   {
     path: "/project/ocr",
