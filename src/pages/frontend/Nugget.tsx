@@ -91,6 +91,18 @@ export function FrontendNugget() {
         </div>
 
         <div>
+          <Title>유튜브 재생목록</Title>
+          <Button
+            onClick={() =>
+              (location.href =
+                "https://www.youtube.com/playlist?list=PLJ8NwEH2yOlnNxdw0dDm-S2inERUV_SlT")
+            }
+          >
+            https://www.youtube.com/playlist?list=PLJ8NwEH2yOlnNxdw0dDm-S2inERUV_SlT
+          </Button>
+        </div>
+
+        <div>
           <Title>깃허브 링크</Title>
           <Button
             onClick={() =>

@@ -37,6 +37,17 @@ export function SecondHackathonPage() {
             </Description>
           </div>
           <div>
+            <Title>후기</Title>
+            <Button
+              onClick={() =>
+                (location.href =
+                  "https://www.linkedin.com/posts/huhhyeongjun_qvordqtse-activity-7200797892419231747-Ro3g?utm_source=share")
+              }
+            >
+              https://www.linkedin.com/posts/huhhyeongjun_qvordqtse-activity-7200797892419231747-Ro3g?utm_source=share
+            </Button>
+          </div>
+          <div>
             <Title>깃허브 링크</Title>
             <Button
               onClick={() => (location.href = "https://github.com/goo-rm-dari")}

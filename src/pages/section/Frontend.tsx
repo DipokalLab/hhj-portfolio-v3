@@ -49,11 +49,13 @@ function FrondendPage() {
         })}
       >
         <ProjectFixedItem
-          title={t(`ns:frontendProject.archery.title`)}
-          subtitle={t(`ns:frontendProject.archery.description`)}
-          tags={["#ThreeJS", "#React"]}
-          imageUrl="/images/archery-01.jpg"
-          clickTo="/project/archery"
+          title={"Fleet"}
+          subtitle={
+            "3D Portfolio Platform for Designers and Makers. Expand the Dimensions of Your Dreams."
+          }
+          tags={["#R3F", "#React/TypeScript"]}
+          imageUrl="/images/fleet-01.jpg"
+          clickTo="/project/fleet"
         ></ProjectFixedItem>
 
         <ProjectFixedItem
@@ -70,6 +72,15 @@ function FrondendPage() {
           tags={["#mediapipe", "#On Device AI", "#threejs"]}
           imageUrl="/images/maskers-05.jpg"
           clickTo="/project/maskers"
+        ></ProjectFixedItem>
+
+        <ProjectFixedItem
+          title={t(`ns:frontendProject.archery.title`)}
+          subtitle={t(`ns:frontendProject.archery.description`)}
+          tags={["#ThreeJS", "#React"]}
+          imageUrl="/images/archery-01.jpg"
+          isShow={isFrontendOpenMore}
+          clickTo="/project/archery"
         ></ProjectFixedItem>
 
         <ProjectFixedItem
