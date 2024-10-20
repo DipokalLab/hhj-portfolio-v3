@@ -36,7 +36,18 @@ export function FrontendNugget() {
           </Description>
           <Description>
             사실상 코드사인 인증서가 1년동안 유지되기 때문에, 서비스는
-            종료되었습니다.{" "}
+            종료되었습니다.
+          </Description>
+          <Description>
+            새로 리팩토링 하고 있습니다. 고등학생때 학교 끝나고 나서 3시간 정도
+            개발할 시간이 있었는데 그때 개발한 프로그램입니다. 제한적인 시간과
+            리소스, 물어볼 만한 사람도 없었기에 사실상 독학으로 개발했습니다만,
+            저에게는 레딧과 깃허브 이슈라는 거대한 문제해결의 장이 있었음에도
+            물어볼 생각을 못했다는 사실에 지금도 놀라곤 합니다. 리팩토링을 함에
+            있어 지난번 electron ipc에 TypeScript를 적용해 1차 리팩토링을 끝냈고
+            ui 부분을 litjs로 변경해 2차 리팩토링을 끝냈습니다. 3차 리팩토링은
+            전체 코드에 TypeScript 적용과 더불어 상태관리 도입, ce의 의존성 분리
+            및 litjs 마이그레이션, canvas로 핸들링을 구현하려고 합니다.
           </Description>
         </div>
 
@@ -89,6 +100,10 @@ export function FrontendNugget() {
               개발 일자 : 2022년 12월 ~ 2023년 6월
             </b>
           </Description>
+
+          <Description>
+            <b css={css({ color: "#000000" })}>3차 리팩토링 : 2024년 10월 ~</b>
+          </Description>
         </div>
 
         <div>
@@ -112,7 +127,7 @@ export function FrontendNugget() {
                   "https://github.com/Team-DeVent/nugget-release")
               }
             >
-              https://github.com/Team-DeVent/nugget-release
+              https://github.com/Team-DeVent/nugget-release (deprecated)
             </Button>
 
             <Button
