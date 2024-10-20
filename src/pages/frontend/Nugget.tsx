@@ -6,6 +6,7 @@ import { Title, Description } from "../../components/common/Text";
 import { Container } from "../../components/Container";
 import { useEffect } from "react";
 import { Nav } from "../../components/common/Nav";
+import { Column } from "../../components/common/Column";
 
 export function FrontendNugget() {
   useEffect(() => {
@@ -104,13 +105,24 @@ export function FrontendNugget() {
 
         <div>
           <Title>깃허브 링크</Title>
-          <Button
-            onClick={() =>
-              (location.href = "https://github.com/Team-DeVent/nugget-release")
-            }
-          >
-            https://github.com/Team-DeVent/nugget-release
-          </Button>
+          <Column>
+            <Button
+              onClick={() =>
+                (location.href =
+                  "https://github.com/Team-DeVent/nugget-release")
+              }
+            >
+              https://github.com/Team-DeVent/nugget-release
+            </Button>
+
+            <Button
+              onClick={() =>
+                (location.href = "https://github.com/cartesiancs/nugget-app")
+              }
+            >
+              https://github.com/cartesiancs/nugget-app
+            </Button>
+          </Column>
         </div>
       </ProjectBody>
     </Container>
