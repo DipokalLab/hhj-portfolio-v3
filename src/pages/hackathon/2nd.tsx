@@ -44,7 +44,7 @@ export function SecondHackathonPage() {
                   "https://www.linkedin.com/posts/huhhyeongjun_qvordqtse-activity-7200797892419231747-Ro3g?utm_source=share")
               }
             >
-              https://www.linkedin.com/posts/huhhyeongjun_qvordqtse-activity-7200797892419231747-Ro3g?utm_source=share
+              linkedin post
             </Button>
           </div>
           <div>
