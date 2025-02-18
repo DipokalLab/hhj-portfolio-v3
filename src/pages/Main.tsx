@@ -16,7 +16,6 @@ import { t } from "i18next";
 import { Nav } from "../components/common/Nav";
 import { getCookies, setCookie } from "../utils/cookie";
 import { HackathonPage } from "./section/Hackathon";
-import { AccountPage } from "./section/Account";
 
 function MainPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
