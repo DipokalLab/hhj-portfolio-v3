@@ -41,7 +41,13 @@ export function FirstHackathonPage() {
               도전적인 마음가짐을 얻었습니다.
             </Description>
 
-            <Description>~ 작성중</Description>
+            <Description>
+              고등학교 3학년, 청소년 대상 해커톤의 처음이자 마지막
+              해커톤이었습니다. 마이스터 고등학교도 아닌, 특성화 고등학교도 아닌
+              일반고에서 소프트웨어를 공부하고 다룬다는건 정말이지 어려운
+              일이었습니다. 지난날의 내가 맞았다는 생각과 더불어 계속
+              정진해야겠다는 확신이 들었습니다.
+            </Description>
           </div>
           <div>
             <Title>깃허브 링크</Title>

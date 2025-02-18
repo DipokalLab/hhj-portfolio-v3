@@ -71,6 +71,12 @@ function Footer() {
               <Link url={"https://medium.com/@hyeongjun"}>
                 {t(`ns:platform.medium`)} {">"}
               </Link>
+              <Link url={"https://x.com/huhhyeongjun"}>
+                {"X (@huhhyeongjun) >"}
+              </Link>
+              <Link url={"https://www.threads.net/@hyeongjun.dev"}>
+                {"Thread (@hyeongjun.dev) >"}
+              </Link>
             </>
           ) : (
             <p
