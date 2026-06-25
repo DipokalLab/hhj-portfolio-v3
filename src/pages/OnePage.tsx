@@ -1,5 +1,3 @@
-import React, { useEffect, useState } from "react";
-
 import { css } from "@emotion/react";
 
 function OnePage() {
@@ -57,6 +55,9 @@ function Links() {
       >
         LinkedIn
       </a>
+      <a href="https://cse.ac/" target="_blank" rel="noopener noreferrer">
+        Blog
+      </a>
       <a
         href="https://www.instagram.com/hyeongjun.dev/"
         target="_blank"
@@ -79,33 +80,13 @@ function Links() {
         Threads
       </a>
       <a
-        href="https://substack.com/@junhuh"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Substack
-      </a>
-      <a
         href="https://www.facebook.com/dipokalhhj"
         target="_blank"
         rel="noopener noreferrer"
       >
         Facebook
       </a>
-      <a
-        href="https://velog.io/@dipokalhhj/posts"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Velog
-      </a>
-      <a
-        href="https://medium.com/@hyeongjun"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Medium
-      </a>
+
       <a
         href="https://www.youtube.com/@huhhyeongjun"
         target="_blank"
